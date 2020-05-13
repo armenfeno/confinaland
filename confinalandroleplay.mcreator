@@ -244,6 +244,14 @@
         "eb": false,
         "ec": false
       }
+    },
+    {
+      "name": "ConfinalandKey",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -276,6 +284,13 @@
   ],
   "language_map": {
     "en_us": {
+      "item.antygravityhelmethelmet.name": "Anty Gravity Helmet Helmet",
+      "item.dragonballscouterboots.name": "Dragon Ball Scouter Boots",
+      "item.confinalandkey.name": "Confinaland Key",
+      "item.sunglasseshelmet.name": "Sun glasses",
+      "item.sunglasses01body.name": "Sun Glasses01 Body",
+      "item.dragonballscouterbody.name": "Dragon Ball Scouter Body",
+      "item.confinacoingold.name": "Confinacoin Gold",
       "item.sunglassesboots.name": "Sunglasses Boots",
       "item.policemegaphone.name": "Police Megaphone",
       "item.sunglasses01helmet.name": "Night Vision Glasses",
@@ -283,21 +298,15 @@
       "item.sunglasses01legs.name": "Sun Glasses01 Leggings",
       "item.antygravityhelmetboots.name": "Anty Gravity Helmet Boots",
       "item.sunglasses01boots.name": "Sun Glasses01 Boots",
-      "item.antygravityhelmethelmet.name": "Anty Gravity Helmet Helmet",
       "item.myersknife.name": "Myers Knife",
-      "item.dragonballscouterboots.name": "Dragon Ball Scouter Boots",
       "item.dragonballscouterlegs.name": "Dragon Ball Scouter Leggings",
       "item.sunglassesbody.name": "Sunglasses Body",
-      "item.sunglasseshelmet.name": "Sun glasses",
       "item.antygravityhelmetlegs.name": "Anty Gravity Helmet Leggings",
       "item.porra.name": "Porra",
-      "item.sunglasses01body.name": "Sun Glasses01 Body",
       "item.antygravityhelmetbody.name": "Anty Gravity Helmet Body",
       "item.dragonballscouterhelmet.name": "Dragon Ball Scouter Helmet",
-      "item.dragonballscouterbody.name": "Dragon Ball Scouter Body",
       "itemGroup.tabconfinalandpolice": "Confinaland Police",
       "item.confinacoinsilver.name": "Silver Confinacoin",
-      "item.confinacoingold.name": "Confinacoin Gold",
       "item.sunglasseslegs.name": "Sunglasses Leggings"
     }
   },
