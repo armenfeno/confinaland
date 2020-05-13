@@ -19,7 +19,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Sólo uso policial"
+      "Sólo para uso policial"
     ],
     "hasGlow": false,
     "onRightClickedInAir": {

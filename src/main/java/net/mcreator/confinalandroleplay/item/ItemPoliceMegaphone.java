@@ -68,7 +68,7 @@ public class ItemPoliceMegaphone extends ElementsConfinalandRoleplay.ModElement 
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add("S\u00F3lo uso policial");
+			list.add("S\u00F3lo para uso policial");
 		}
 
 		@Override

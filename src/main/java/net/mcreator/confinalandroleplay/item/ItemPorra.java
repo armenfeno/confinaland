@@ -68,7 +68,7 @@ public class ItemPorra extends ElementsConfinalandRoleplay.ModElement {
 				.newHashSet(new Block[]{Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN,
 						Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE});
 		protected ItemToolCustom() {
-			super(EnumHelper.addToolMaterial("PORRA", 1, 125000, 4f, 11f, 2), effective_items_set);
+			super(EnumHelper.addToolMaterial("PORRA", 1, 0, 4f, 11f, 2), effective_items_set);
 			this.attackDamage = 11f;
 			this.attackSpeed = -1f;
 		}

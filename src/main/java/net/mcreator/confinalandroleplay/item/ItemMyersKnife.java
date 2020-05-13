@@ -64,7 +64,7 @@ public class ItemMyersKnife extends ElementsConfinalandRoleplay.ModElement {
 	}
 	private static class ItemToolCustom extends Item {
 		protected ItemToolCustom() {
-			setMaxDamage(99990);
+			setMaxDamage(0);
 			setMaxStackSize(1);
 		}
 
