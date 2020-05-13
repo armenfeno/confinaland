@@ -1,0 +1,47 @@
+{
+  "alto_policia": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:alto-policia_mp3cut.net",
+        "stream": false
+      }
+    ]
+  },
+  "sirena_policia": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:_mp3cut.net",
+        "stream": false
+      }
+    ]
+  },
+  "confinacoin": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:efecto-de-sonido-caja-registradora_mp3cut.net",
+        "stream": false
+      }
+    ]
+  },
+  "myers": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:myers",
+        "stream": false
+      }
+    ]
+  },
+  "super_saiyan": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:super_saiyan_sound_effect",
+        "stream": false
+      }
+    ]
+  }
+}

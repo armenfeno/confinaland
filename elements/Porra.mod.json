@@ -1,0 +1,26 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "porra_policia",
+    "customModelName": "Normal",
+    "name": "Porra",
+    "creativeTab": {
+      "value": "CUSTOM:ConfinalandPolice"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 3.0,
+    "enchantability": 2,
+    "damageVsEntity": 15.0,
+    "usageCount": 125000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "onRightClickedInAir": {
+      "name": "PorraRightClickedInAir"
+    }
+  }
+}
