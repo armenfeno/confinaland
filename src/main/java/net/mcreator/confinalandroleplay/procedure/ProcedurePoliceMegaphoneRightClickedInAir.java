@@ -35,6 +35,6 @@ public class ProcedurePoliceMegaphoneRightClickedInAir extends ElementsConfinala
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-				.getObject(new ResourceLocation("confinalandroleplay:sirena_policia")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+				.getObject(new ResourceLocation("confinalandroleplay:sirena_policia")), SoundCategory.NEUTRAL, (float) 5, (float) 1);
 	}
 }

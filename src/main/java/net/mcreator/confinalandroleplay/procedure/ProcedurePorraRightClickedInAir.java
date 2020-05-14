@@ -35,6 +35,6 @@ public class ProcedurePorraRightClickedInAir extends ElementsConfinalandRoleplay
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-				.getObject(new ResourceLocation("confinalandroleplay:alto_policia")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+				.getObject(new ResourceLocation("confinalandroleplay:alto_policia")), SoundCategory.NEUTRAL, (float) 2, (float) 1);
 	}
 }

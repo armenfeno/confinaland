@@ -60,7 +60,7 @@ public class BlockSarumanPalantir extends ElementsConfinalandRoleplay.ModElement
 			setHarvestLevel("pickaxe", 1);
 			setHardness(4F);
 			setResistance(13F);
-			setLightLevel(1F);
+			setLightLevel(0.4F);
 			setLightOpacity(0);
 			setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 		}
@@ -84,7 +84,7 @@ public class BlockSarumanPalantir extends ElementsConfinalandRoleplay.ModElement
 
 		@Override
 		public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-			return new AxisAlignedBB(0D, 0D, 0D, 0.7D, 0.7D, 0.6D);
+			return new AxisAlignedBB(0.15D, 0D, 0.15D, 0.8D, 0.8D, 0.8D);
 		}
 
 		@Override
@@ -114,7 +114,7 @@ public class BlockSarumanPalantir extends ElementsConfinalandRoleplay.ModElement
 			int j = y;
 			int k = z;
 			if (true)
-				for (int l = 0; l < 10; ++l) {
+				for (int l = 0; l < 2; ++l) {
 					double d0 = (i + random.nextFloat());
 					double d1 = (j + random.nextFloat());
 					double d2 = (k + random.nextFloat());
@@ -122,7 +122,7 @@ public class BlockSarumanPalantir extends ElementsConfinalandRoleplay.ModElement
 					double d3 = (random.nextFloat() - 0.5D) * 1.500000001490116D;
 					double d4 = (random.nextFloat() - 0.5D) * 1.500000001490116D;
 					double d5 = (random.nextFloat() - 0.5D) * 1.500000001490116D;
-					world.spawnParticle(EnumParticleTypes.DRIP_LAVA, d0, d1, d2, d3, d4, d5);
+					world.spawnParticle(EnumParticleTypes.CRIT, d0, d1, d2, d3, d4, d5);
 				}
 		}
 	}
