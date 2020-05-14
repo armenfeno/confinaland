@@ -17,6 +17,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -27,6 +28,7 @@ import net.minecraft.block.material.MapColor;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Block;
 
+import net.mcreator.confinalandroleplay.procedure.ProcedureSarumanPalantirBlockIsPlacedBy;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.Random;
@@ -124,6 +126,22 @@ public class BlockSarumanPalantir extends ElementsConfinalandRoleplay.ModElement
 					double d5 = (random.nextFloat() - 0.5D) * 1.500000001490116D;
 					world.spawnParticle(EnumParticleTypes.CRIT, d0, d1, d2, d3, d4, d5);
 				}
+		}
+
+		@Override
+		public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase entity, ItemStack itemstack) {
+			super.onBlockPlacedBy(world, pos, state, entity, itemstack);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureSarumanPalantirBlockIsPlacedBy.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

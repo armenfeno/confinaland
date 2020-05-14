@@ -70,5 +70,14 @@
         "stream": true
       }
     ]
+  },
+  "sauron_speech": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:sauron-black-speech",
+        "stream": false
+      }
+    ]
   }
 }

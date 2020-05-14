@@ -79,6 +79,9 @@
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
+    "onBlockPlayedBy": {
+      "name": "SarumanPalantirBlockIsPlacedBy"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -336,6 +336,34 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "SarumanPalantirBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -379,6 +407,11 @@
       "name": "musictavernlow",
       "file": "avernnnusicow",
       "category": "music"
+    },
+    {
+      "name": "sauron_speech",
+      "file": "sauron-black-speech",
+      "category": "master"
     }
   ],
   "language_map": {
