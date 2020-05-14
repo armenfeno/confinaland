@@ -1,3 +1,4 @@
+item.tavern.name=Tavern
 item.antygravityhelmethelmet.name=Anty Gravity Helmet Helmet
 item.dragonballscouterboots.name=Dragon Ball Scouter Boots
 item.confinalandkey.name=Confinaland Key
@@ -19,6 +20,7 @@ item.sunglassesbody.name=Sunglasses Body
 item.antygravityhelmetlegs.name=Anty Gravity Helmet Leggings
 item.porra.name=Porra
 item.antygravityhelmetbody.name=Anty Gravity Helmet Body
+item.record.tavern.desc=Música ambiental para la Taverna de Confinaland
 item.dragonballscouterhelmet.name=Dragon Ball Scouter Helmet
 itemGroup.tabconfinalandpolice=Confinaland Police
 item.confinacoinsilver.name=Silver Confinacoin

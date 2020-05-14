@@ -1,0 +1,17 @@
+{
+  "_fv": 6,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "musicdisc",
+    "name": "Tavern",
+    "description": "Música ambiental para la Taverna de Confinaland",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:musictavern"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

@@ -52,5 +52,14 @@
         "stream": false
       }
     ]
+  },
+  "musictavern": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:avernnnusic",
+        "stream": true
+      }
+    ]
   }
 }
