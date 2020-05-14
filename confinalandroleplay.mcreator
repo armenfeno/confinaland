@@ -328,6 +328,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "TavernLow",
+      "type": "musicdisc",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -366,12 +374,18 @@
       "name": "musictavern",
       "file": "avernnnusic",
       "category": "music"
+    },
+    {
+      "name": "musictavernlow",
+      "file": "avernnnusicow",
+      "category": "music"
     }
   ],
   "language_map": {
     "en_us": {
       "item.tavern.name": "Tavern",
       "item.antygravityhelmethelmet.name": "Anty Gravity Helmet Helmet",
+      "item.record.tavernlow.desc": "Música ambiental para la Taverna de Confinaland",
       "item.dragonballscouterboots.name": "Dragon Ball Scouter Boots",
       "item.confinalandkey.name": "Confinaland Key",
       "item.sunglasseshelmet.name": "Sun glasses",
@@ -396,6 +410,7 @@
       "item.dragonballscouterhelmet.name": "Dragon Ball Scouter Helmet",
       "itemGroup.tabconfinalandpolice": "Confinaland Police",
       "item.confinacoinsilver.name": "Silver Confinacoin",
+      "item.tavernlow.name": "Tavern Low",
       "item.sunglasseslegs.name": "Sunglasses Leggings"
     }
   },

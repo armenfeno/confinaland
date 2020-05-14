@@ -61,5 +61,14 @@
         "stream": true
       }
     ]
+  },
+  "musictavernlow": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:avernnnusicow",
+        "stream": true
+      }
+    ]
   }
 }
