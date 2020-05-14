@@ -39,7 +39,7 @@ public class ItemPorra extends ElementsConfinalandRoleplay.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("PORRA", 1, 0, 4f, 11f, 2)) {
+		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("PORRA", 1, 0, 4f, 26f, 2)) {
 			@Override
 			public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot slot) {
 				Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);

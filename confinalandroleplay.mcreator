@@ -227,6 +227,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -252,6 +268,50 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "MyersKnifeslowness",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DbzJump",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -267,6 +327,16 @@
       "category": "master"
     },
     {
+      "name": "super_saiyan",
+      "file": "super_saiyan_sound_effect",
+      "category": "player"
+    },
+    {
+      "name": "dbzjump",
+      "file": "jump",
+      "category": "player"
+    },
+    {
       "name": "confinacoin",
       "file": "efecto-de-sonido-caja-registradora_mp3cut.net",
       "category": "master"
@@ -274,11 +344,6 @@
     {
       "name": "myers",
       "file": "myers",
-      "category": "player"
-    },
-    {
-      "name": "super_saiyan",
-      "file": "super_saiyan_sound_effect",
       "category": "player"
     }
   ],

@@ -7,20 +7,23 @@
     "customModelName": "Normal",
     "name": "Myers Knife",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "COMBAT"
     },
-    "toolType": "Special",
+    "toolType": "Sword",
     "harvestLevel": 0,
     "efficiency": 4.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
-    "damageVsEntity": 20.0,
+    "damageVsEntity": 50.0,
     "usageCount": 0,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [],
     "onRightClickedInAir": {
       "name": "MyersKnifeRightClickedInAir"
+    },
+    "onItemInUseTick": {
+      "name": "MyersKnifeslowness"
     }
   }
 }
