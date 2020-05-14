@@ -11,21 +11,23 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.world.World;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.ActionResult;
-import net.minecraft.item.ItemTool;
+import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.init.Blocks;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.Block;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedurePorraRightClickedInAir;
 import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.Set;
+import java.util.HashMap;
+
+import com.google.common.collect.Multimap;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
 public class ItemPorra extends ElementsConfinalandRoleplay.ModElement {
@@ -37,7 +39,25 @@ public class ItemPorra extends ElementsConfinalandRoleplay.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemToolCustom() {
+		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("PORRA", 1, 0, 4f, 11f, 2)) {
+			@Override
+			public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot slot) {
+				Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);
+				if (slot == EntityEquipmentSlot.MAINHAND) {
+					multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(),
+							new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Weapon modifier", (double) this.getAttackDamage(), 0));
+					multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(),
+							new AttributeModifier(ATTACK_SPEED_MODIFIER, "Weapon modifier", -1, 0));
+				}
+				return multimap;
+			}
+
+			public Set<String> getToolClasses(ItemStack stack) {
+				HashMap<String, Integer> ret = new HashMap<String, Integer>();
+				ret.put("sword", 1);
+				return ret.keySet();
+			}
+
 			@Override
 			public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer entity, EnumHand hand) {
 				ActionResult<ItemStack> retval = super.onItemRightClick(world, entity, hand);
@@ -62,23 +82,5 @@ public class ItemPorra extends ElementsConfinalandRoleplay.ModElement {
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
 		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("confinalandroleplay:porra", "inventory"));
-	}
-	private static class ItemToolCustom extends ItemTool {
-		private static final Set<Block> effective_items_set = com.google.common.collect.Sets
-				.newHashSet(new Block[]{Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN,
-						Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE});
-		protected ItemToolCustom() {
-			super(EnumHelper.addToolMaterial("PORRA", 1, 0, 4f, 11f, 2), effective_items_set);
-			this.attackDamage = 11f;
-			this.attackSpeed = -1f;
-		}
-
-		@Override
-		public float getDestroySpeed(ItemStack stack, IBlockState state) {
-			Material material = state.getMaterial();
-			return material != Material.WOOD && material != Material.PLANTS && material != Material.VINE
-					? super.getDestroySpeed(stack, state)
-					: this.efficiency;
-		}
 	}
 }
