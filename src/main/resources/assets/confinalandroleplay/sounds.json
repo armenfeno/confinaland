@@ -17,6 +17,24 @@
       }
     ]
   },
+  "super_saiyan": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:super_saiyan_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "dbzjump": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:jump",
+        "stream": false
+      }
+    ]
+  },
   "confinacoin": {
     "category": "master",
     "sounds": [
@@ -31,15 +49,6 @@
     "sounds": [
       {
         "name": "confinalandroleplay:myers",
-        "stream": false
-      }
-    ]
-  },
-  "super_saiyan": {
-    "category": "player",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:super_saiyan_sound_effect",
         "stream": false
       }
     ]

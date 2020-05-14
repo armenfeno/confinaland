@@ -312,6 +312,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "SarumanPalantir",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -354,6 +362,7 @@
       "item.confinalandkey.name": "Confinaland Key",
       "item.sunglasseshelmet.name": "Sun glasses",
       "item.sunglasses01body.name": "Sun Glasses01 Body",
+      "tile.sarumanpalantir.name": "Saruman Palantir",
       "item.dragonballscouterbody.name": "Dragon Ball Scouter Body",
       "item.confinacoingold.name": "Confinacoin Gold",
       "item.sunglassesboots.name": "Sunglasses Boots",
