@@ -3,6 +3,9 @@
   "textures": {
     "all": "confinalandroleplay:blocks/rotura_palantir",
     "particle": "confinalandroleplay:blocks/rotura_palantir",
-    "0": "confinalandroleplay:blocks/alantir"
+    "0": "confinalandroleplay:blocks/alantir",
+    "1": "confinalandroleplay:blocks/animation_texture",
+    "2": "confinalandroleplay:blocks/animation_texture_00",
+    "3": "confinalandroleplay:blocks/animation_texture_01"
   }
 }

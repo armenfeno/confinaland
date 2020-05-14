@@ -2,7 +2,10 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "alantir"
+        "0": "alantir",
+        "1": "animation_texture",
+        "2": "animation_texture_00",
+        "3": "animation_texture_01"
       },
       "name": "default"
     }
