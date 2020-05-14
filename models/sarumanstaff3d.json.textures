@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "arumantaff",
+        "1": "arumantaff_01"
+      },
+      "name": "default"
+    }
+  }
+}

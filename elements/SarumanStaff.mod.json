@@ -1,0 +1,23 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "porra_policia",
+    "customModelName": "sarumanstaff3d:default",
+    "name": "Saruman Staff",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.5,
+    "enchantability": 2,
+    "damageVsEntity": 10.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": []
+  }
+}
