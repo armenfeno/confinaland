@@ -1,4 +1,3 @@
-item.tavern.name=Tavern
 item.sarumanstaff.name=Saruman Staff
 item.antygravityhelmethelmet.name=Anty Gravity Helmet Helmet
 item.record.tavernlow.desc=Música ambiental para la Taverna de Confinaland
@@ -22,7 +21,6 @@ item.sunglassesbody.name=Sunglasses Body
 item.antygravityhelmetlegs.name=Anty Gravity Helmet Leggings
 item.porra.name=Porra
 item.antygravityhelmetbody.name=Anty Gravity Helmet Body
-item.record.tavern.desc=Música ambiental para la Taverna de Confinaland
 key.mcreator.jump=Jump
 item.dragonballscouterhelmet.name=Dragon Ball Scouter Helmet
 itemGroup.tabconfinalandpolice=Confinaland Police

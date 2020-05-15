@@ -306,14 +306,6 @@
       "ids": {}
     },
     {
-      "name": "Tavern",
-      "type": "musicdisc",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "TavernLow",
       "type": "musicdisc",
       "sortid": 27,
@@ -500,11 +492,15 @@
       "name": "sauron_speech",
       "file": "sauron-black-speech",
       "category": "master"
+    },
+    {
+      "name": "legolas",
+      "file": "isengard",
+      "category": "player"
     }
   ],
   "language_map": {
     "en_us": {
-      "item.tavern.name": "Tavern",
       "item.sarumanstaff.name": "Saruman Staff",
       "item.antygravityhelmethelmet.name": "Anty Gravity Helmet Helmet",
       "item.record.tavernlow.desc": "Música ambiental para la Taverna de Confinaland",
@@ -528,7 +524,6 @@
       "item.antygravityhelmetlegs.name": "Anty Gravity Helmet Leggings",
       "item.porra.name": "Porra",
       "item.antygravityhelmetbody.name": "Anty Gravity Helmet Body",
-      "item.record.tavern.desc": "Música ambiental para la Taverna de Confinaland",
       "key.mcreator.jump": "Jump",
       "item.dragonballscouterhelmet.name": "Dragon Ball Scouter Helmet",
       "itemGroup.tabconfinalandpolice": "Confinaland Police",

@@ -79,5 +79,14 @@
         "stream": false
       }
     ]
+  },
+  "legolas": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:isengard",
+        "stream": false
+      }
+    ]
   }
 }
