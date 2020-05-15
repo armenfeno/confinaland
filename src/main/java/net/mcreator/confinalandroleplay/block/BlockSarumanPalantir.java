@@ -12,12 +12,13 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -28,7 +29,7 @@ import net.minecraft.block.material.MapColor;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Block;
 
-import net.mcreator.confinalandroleplay.procedure.ProcedureSarumanPalantirBlockIsPlacedBy;
+import net.mcreator.confinalandroleplay.procedure.ProcedureSarumanPalantirOnBlockRightClicked;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.Random;
@@ -129,8 +130,9 @@ public class BlockSarumanPalantir extends ElementsConfinalandRoleplay.ModElement
 		}
 
 		@Override
-		public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase entity, ItemStack itemstack) {
-			super.onBlockPlacedBy(world, pos, state, entity, itemstack);
+		public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer entity, EnumHand hand, EnumFacing direction,
+				float hitX, float hitY, float hitZ) {
+			super.onBlockActivated(world, pos, state, entity, hand, direction, hitX, hitY, hitZ);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
@@ -140,8 +142,9 @@ public class BlockSarumanPalantir extends ElementsConfinalandRoleplay.ModElement
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureSarumanPalantirBlockIsPlacedBy.executeProcedure($_dependencies);
+				ProcedureSarumanPalantirOnBlockRightClicked.executeProcedure($_dependencies);
 			}
+			return true;
 		}
 	}
 }
