@@ -53,15 +53,6 @@
       }
     ]
   },
-  "musictavern": {
-    "category": "music",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:avernnnusic",
-        "stream": true
-      }
-    ]
-  },
   "musictavernlow": {
     "category": "music",
     "sounds": [

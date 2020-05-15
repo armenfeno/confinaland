@@ -479,11 +479,6 @@
       "category": "player"
     },
     {
-      "name": "musictavern",
-      "file": "avernnnusic",
-      "category": "music"
-    },
-    {
       "name": "musictavernlow",
       "file": "avernnnusicow",
       "category": "music"
