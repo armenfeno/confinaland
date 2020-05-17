@@ -9,6 +9,7 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
@@ -38,7 +39,7 @@ public class ItemConfinacoinGold extends ElementsConfinalandRoleplay.ModElement 
 			maxStackSize = 64;
 			setUnlocalizedName("confinacoingold");
 			setRegistryName("confinacoingold");
-			setCreativeTab(null);
+			setCreativeTab(CreativeTabs.MISC);
 		}
 
 		@Override

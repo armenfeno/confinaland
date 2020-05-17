@@ -27,13 +27,13 @@ public class ItemSarumanStaff extends ElementsConfinalandRoleplay.ModElement {
 	@GameRegistry.ObjectHolder("confinalandroleplay:sarumanstaff")
 	public static final Item block = null;
 	public ItemSarumanStaff(ElementsConfinalandRoleplay instance) {
-		super(instance, 30);
+		super(instance, 33);
 	}
 
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemToolCustom() {
-		}.setUnlocalizedName("sarumanstaff").setRegistryName("sarumanstaff").setCreativeTab(CreativeTabs.COMBAT));
+		}.setUnlocalizedName("sarumanstaff").setRegistryName("sarumanstaff").setCreativeTab(CreativeTabs.TOOLS));
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -46,9 +46,9 @@ public class ItemSarumanStaff extends ElementsConfinalandRoleplay.ModElement {
 				.newHashSet(new Block[]{Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN,
 						Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE});
 		protected ItemToolCustom() {
-			super(EnumHelper.addToolMaterial("SARUMANSTAFF", 1, 0, 4f, 6f, 2), effective_items_set);
-			this.attackDamage = 6f;
-			this.attackSpeed = -3.5f;
+			super(EnumHelper.addToolMaterial("SARUMANSTAFF", 1, 0, 4f, 8f, 2), effective_items_set);
+			this.attackDamage = 8f;
+			this.attackSpeed = -3f;
 		}
 
 		@Override

@@ -1,0 +1,8 @@
+{
+  "parent": "confinalandroleplay:custom/test",
+  "textures": {
+    "all": "confinalandroleplay:blocks/arumantaff_01",
+    "particle": "confinalandroleplay:blocks/arumantaff_01",
+    "0": "confinalandroleplay:blocks/arumantaff_01"
+  }
+}
