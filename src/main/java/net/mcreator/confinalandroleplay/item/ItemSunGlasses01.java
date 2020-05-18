@@ -15,7 +15,6 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureSunGlasses01HelmetTickEvent;
@@ -52,7 +51,7 @@ public class ItemSunGlasses01 extends ElementsConfinalandRoleplay.ModElement {
 					ProcedureSunGlasses01HelmetTickEvent.executeProcedure($_dependencies);
 				}
 			}
-		}.setUnlocalizedName("sunglasses01helmet").setRegistryName("sunglasses01helmet").setCreativeTab(CreativeTabs.TOOLS));
+		}.setUnlocalizedName("sunglasses01helmet").setRegistryName("sunglasses01helmet").setCreativeTab(null));
 	}
 
 	@SideOnly(Side.CLIENT)

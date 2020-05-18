@@ -4,23 +4,28 @@ package net.mcreator.confinalandroleplay.item;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
-import net.minecraft.item.ItemTool;
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.init.Blocks;
+import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.Block;
 
+import net.mcreator.confinalandroleplay.procedure.ProcedureSarumanStaffRightClickedInAir;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
-import java.util.Set;
+import com.google.common.collect.Multimap;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
 public class ItemSarumanStaff extends ElementsConfinalandRoleplay.ModElement {
@@ -33,6 +38,23 @@ public class ItemSarumanStaff extends ElementsConfinalandRoleplay.ModElement {
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemToolCustom() {
+			@Override
+			public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer entity, EnumHand hand) {
+				ActionResult<ItemStack> retval = super.onItemRightClick(world, entity, hand);
+				ItemStack itemstack = retval.getResult();
+				int x = (int) entity.posX;
+				int y = (int) entity.posY;
+				int z = (int) entity.posZ;
+				{
+					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					ProcedureSarumanStaffRightClickedInAir.executeProcedure($_dependencies);
+				}
+				return retval;
+			}
 		}.setUnlocalizedName("sarumanstaff").setRegistryName("sarumanstaff").setCreativeTab(CreativeTabs.TOOLS));
 	}
 
@@ -41,22 +63,48 @@ public class ItemSarumanStaff extends ElementsConfinalandRoleplay.ModElement {
 	public void registerModels(ModelRegistryEvent event) {
 		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("confinalandroleplay:sarumanstaff", "inventory"));
 	}
-	private static class ItemToolCustom extends ItemTool {
-		private static final Set<Block> effective_items_set = com.google.common.collect.Sets
-				.newHashSet(new Block[]{Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN,
-						Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE});
+	private static class ItemToolCustom extends Item {
 		protected ItemToolCustom() {
-			super(EnumHelper.addToolMaterial("SARUMANSTAFF", 1, 0, 4f, 8f, 2), effective_items_set);
-			this.attackDamage = 8f;
-			this.attackSpeed = -3f;
+			setMaxDamage(0);
+			setMaxStackSize(1);
 		}
 
 		@Override
-		public float getDestroySpeed(ItemStack stack, IBlockState state) {
-			Material material = state.getMaterial();
-			return material != Material.WOOD && material != Material.PLANTS && material != Material.VINE
-					? super.getDestroySpeed(stack, state)
-					: this.efficiency;
+		public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot equipmentSlot) {
+			Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(equipmentSlot);
+			if (equipmentSlot == EntityEquipmentSlot.MAINHAND) {
+				multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(), new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Tool modifier", -3f, 0));
+				multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(), new AttributeModifier(ATTACK_SPEED_MODIFIER, "Tool modifier", -3, 0));
+			}
+			return multimap;
+		}
+
+		@Override
+		public float getDestroySpeed(ItemStack par1ItemStack, IBlockState par2Block) {
+			IBlockState require;
+			return 0;
+		}
+
+		@Override
+		public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos, EntityLivingBase entityLiving) {
+			stack.damageItem(1, entityLiving);
+			return true;
+		}
+
+		@Override
+		public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
+			stack.damageItem(2, attacker);
+			return true;
+		}
+
+		@Override
+		public boolean isFull3D() {
+			return true;
+		}
+
+		@Override
+		public int getItemEnchantability() {
+			return 2;
 		}
 	}
 }

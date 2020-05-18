@@ -79,5 +79,14 @@
         "stream": false
       }
     ]
+  },
+  "saruman": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:aruman",
+        "stream": false
+      }
+    ]
   }
 }

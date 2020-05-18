@@ -15,7 +15,6 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureDBscouterHelmetTickEvent;
@@ -53,7 +52,7 @@ public class ItemDragonBallScouter extends ElementsConfinalandRoleplay.ModElemen
 					ProcedureDBscouterHelmetTickEvent.executeProcedure($_dependencies);
 				}
 			}
-		}.setUnlocalizedName("dragonballscouterhelmet").setRegistryName("dragonballscouterhelmet").setCreativeTab(CreativeTabs.TOOLS));
+		}.setUnlocalizedName("dragonballscouterhelmet").setRegistryName("dragonballscouterhelmet").setCreativeTab(null));
 	}
 
 	@SideOnly(Side.CLIENT)

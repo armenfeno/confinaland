@@ -15,7 +15,6 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureAntyGravityHelmetHelmetTickEvent;
@@ -53,7 +52,7 @@ public class ItemAntyGravityHelmet extends ElementsConfinalandRoleplay.ModElemen
 					ProcedureAntyGravityHelmetHelmetTickEvent.executeProcedure($_dependencies);
 				}
 			}
-		}.setUnlocalizedName("antygravityhelmethelmet").setRegistryName("antygravityhelmethelmet").setCreativeTab(CreativeTabs.COMBAT));
+		}.setUnlocalizedName("antygravityhelmethelmet").setRegistryName("antygravityhelmethelmet").setCreativeTab(null));
 	}
 
 	@SideOnly(Side.CLIENT)

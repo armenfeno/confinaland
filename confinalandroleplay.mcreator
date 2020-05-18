@@ -416,6 +416,34 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "SarumanStaffRightClickedInAir",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -463,6 +491,11 @@
     {
       "name": "legolas",
       "file": "isengard",
+      "category": "player"
+    },
+    {
+      "name": "saruman",
+      "file": "aruman",
       "category": "player"
     }
   ],
