@@ -20,8 +20,8 @@ public class ProcedureDBscouterHelmetTickEvent extends ElementsConfinalandRolepl
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, (int) 15, (int) 1, (false), (false)));
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, (int) 60, (int) 1, (false), (false)));
 		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, (int) 15, (int) 10, (false), (false)));
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, (int) 60, (int) 10, (false), (false)));
 	}
 }

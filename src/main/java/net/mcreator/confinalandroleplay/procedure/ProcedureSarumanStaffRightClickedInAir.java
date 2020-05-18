@@ -41,7 +41,7 @@ public class ProcedureSarumanStaffRightClickedInAir extends ElementsConfinalandR
 		double espera = 0;
 		world.playSound((EntityPlayer) null, x, y, z,
 				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("confinalandroleplay:saruman")),
-				SoundCategory.NEUTRAL, (float) 20, (float) 1);
+				SoundCategory.NEUTRAL, (float) 5000, (float) 1);
 		if (!world.isRemote && world.getMinecraftServer() != null) {
 			world.getMinecraftServer().getCommandManager().executeCommand(new ICommandSender() {
 				@Override
