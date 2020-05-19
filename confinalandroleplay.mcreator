@@ -444,6 +444,78 @@
           }
         ]
       }
+    },
+    {
+      "name": "MendingMaker",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Tengo50niveles",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MendingMakerRightClickedInAir",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -479,11 +551,6 @@
       "category": "player"
     },
     {
-      "name": "musictavernlow",
-      "file": "avernnnusicow",
-      "category": "music"
-    },
-    {
       "name": "sauron_speech",
       "file": "sauron-black-speech",
       "category": "master"
@@ -497,6 +564,11 @@
       "name": "saruman",
       "file": "aruman",
       "category": "player"
+    },
+    {
+      "name": "tavernmusic",
+      "file": "usicavern",
+      "category": "music"
     }
   ],
   "language_map": {
@@ -529,6 +601,7 @@
       "itemGroup.tabconfinalandpolice": "Confinaland Police",
       "item.confinacoinsilver.name": "Silver Confinacoin",
       "item.tavernlow.name": "Tavern Low",
+      "item.mendingmaker.name": "Empty Mending Book",
       "item.sunglasseslegs.name": "Sunglasses Leggings"
     }
   },

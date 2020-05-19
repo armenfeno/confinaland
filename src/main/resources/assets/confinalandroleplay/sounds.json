@@ -53,15 +53,6 @@
       }
     ]
   },
-  "musictavernlow": {
-    "category": "music",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:avernnnusicow",
-        "stream": true
-      }
-    ]
-  },
   "sauron_speech": {
     "category": "master",
     "sounds": [
@@ -86,6 +77,15 @@
       {
         "name": "confinalandroleplay:aruman",
         "stream": false
+      }
+    ]
+  },
+  "tavernmusic": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:usicavern",
+        "stream": true
       }
     ]
   }
