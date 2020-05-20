@@ -23,5 +23,6 @@ public class ProcedureAntyGravityHelmetHelmetTickEvent extends ElementsConfinala
 			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, (int) 1, (int) 7, (false), (false)));
 		if (entity instanceof EntityLivingBase)
 			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.SPEED, (int) 1, (int) 7, (false), (false)));
+		entity.setInWeb();
 	}
 }
