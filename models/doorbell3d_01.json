@@ -1,0 +1,65 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "Mod Confinaland/DBScouter",
+		"particle": "Mod Confinaland/DBScouter"
+	},
+	"elements": [
+		{
+			"from": [6.5, 5, 15.5],
+			"to": [9.5, 11, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [13, -3, 22]},
+			"faces": {
+				"north": {"uv": [3.625, 6, 4, 6.75], "texture": "#0"},
+				"east": {"uv": [3.625, 6, 3.625, 6.75], "texture": "#0"},
+				"south": {"uv": [4, 6, 4.375, 6.75], "texture": "#0"},
+				"west": {"uv": [4, 6, 4, 6.75], "texture": "#0"},
+				"up": {"uv": [4, 6, 3.625, 6], "texture": "#0"},
+				"down": {"uv": [4.375, 6, 4, 6], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.5, 7, 15],
+			"to": [8.5, 9, 16],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 8, 15]},
+			"faces": {
+				"north": {"uv": [8.5, 7.875, 8.625, 8.125], "texture": "#0"},
+				"east": {"uv": [8.375, 7.875, 8.5, 8.125], "texture": "#0"},
+				"south": {"uv": [8.75, 7.875, 8.875, 8.125], "texture": "#0"},
+				"west": {"uv": [8.625, 7.875, 8.75, 8.125], "texture": "#0"},
+				"up": {"uv": [8.625, 7.875, 8.5, 7.75], "texture": "#0"},
+				"down": {"uv": [8.75, 7.75, 8.625, 7.875], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-180, 70, 0],
+			"translation": [-7.75, 1.25, 2.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-180, 70, 0],
+			"translation": [-7.75, 1.25, 2.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 86, 0],
+			"translation": [-7, 2.75, 3]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 86, 0],
+			"translation": [-7, 2.75, 3]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 5.25, 0]
+		},
+		"gui": {
+			"scale": [1.5, 1.5, -1.5]
+		},
+		"fixed": {
+			"translation": [0, 0, -12],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	}
+}

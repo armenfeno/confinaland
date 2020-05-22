@@ -524,6 +524,78 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "DoorBell",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DoorBell01",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DoorBellOnBlockRightClicked_sound",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DoorBell01OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -577,6 +649,11 @@
       "name": "tavernmusic",
       "file": "usicavern",
       "category": "music"
+    },
+    {
+      "name": "doorbell",
+      "file": "doorbell-sound-effect",
+      "category": "master"
     }
   ],
   "language_map": {
@@ -590,6 +667,7 @@
       "item.sunglasseshelmet.name": "Sun glasses",
       "item.sunglasses01body.name": "Sun Glasses01 Body",
       "tile.sarumanpalantir.name": "Saruman Palantir",
+      "tile.doorbell.name": "Door Bell",
       "item.dragonballscouterbody.name": "Dragon Ball Scouter Body",
       "item.confinacoingold.name": "Gold Confinacoin",
       "item.sunglassesboots.name": "Sunglasses Boots",
@@ -605,6 +683,7 @@
       "item.antygravityhelmetlegs.name": "Anty Gravity Helmet Leggings",
       "item.porra.name": "Porra",
       "item.antygravityhelmetbody.name": "Anty Gravity Helmet Body",
+      "tile.doorbell01.name": "Door Bell",
       "key.mcreator.jump": "Jump",
       "item.dragonballscouterhelmet.name": "Dragon Ball Scouter Helmet",
       "itemGroup.tabconfinalandpolice": "Confinaland Police",

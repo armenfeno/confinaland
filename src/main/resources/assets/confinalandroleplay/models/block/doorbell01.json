@@ -1,0 +1,8 @@
+{
+  "parent": "confinalandroleplay:custom/doorbell3d_01",
+  "textures": {
+    "all": "confinalandroleplay:blocks/rotura_palantir",
+    "particle": "confinalandroleplay:blocks/rotura_palantir",
+    "0": "confinalandroleplay:blocks/couter"
+  }
+}

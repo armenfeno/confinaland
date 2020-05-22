@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "confinalandroleplay:doorbell"
+    },
+    "facing=north": {
+      "model": "confinalandroleplay:doorbell"
+    },
+    "facing=east": {
+      "model": "confinalandroleplay:doorbell",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "confinalandroleplay:doorbell",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "confinalandroleplay:doorbell",
+      "y": 270
+    }
+  }
+}

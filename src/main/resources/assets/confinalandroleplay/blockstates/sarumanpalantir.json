@@ -2,6 +2,21 @@
   "variants": {
     "normal": {
       "model": "confinalandroleplay:sarumanpalantir"
+    },
+    "facing=north": {
+      "model": "confinalandroleplay:sarumanpalantir"
+    },
+    "facing=east": {
+      "model": "confinalandroleplay:sarumanpalantir",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "confinalandroleplay:sarumanpalantir",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "confinalandroleplay:sarumanpalantir",
+      "y": 270
     }
   }
 }

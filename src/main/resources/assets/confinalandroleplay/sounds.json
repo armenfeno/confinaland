@@ -88,5 +88,14 @@
         "stream": true
       }
     ]
+  },
+  "doorbell": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:doorbell-sound-effect",
+        "stream": false
+      }
+    ]
   }
 }

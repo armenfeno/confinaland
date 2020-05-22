@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "normal": {
+      "model": "confinalandroleplay:doorbell01"
+    },
+    "facing=north": {
+      "model": "confinalandroleplay:doorbell01"
+    },
+    "facing=east": {
+      "model": "confinalandroleplay:doorbell01",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "confinalandroleplay:doorbell01",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "confinalandroleplay:doorbell01",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "confinalandroleplay:doorbell01",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "confinalandroleplay:doorbell01",
+      "x": 90
+    }
+  }
+}
