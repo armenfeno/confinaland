@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "confinalandroleplay:blocks/blockborder",
+    "up": "confinalandroleplay:blocks/blockborder",
+    "north": "confinalandroleplay:blocks/blockborder",
+    "east": "confinalandroleplay:blocks/blockborder",
+    "south": "confinalandroleplay:blocks/blockborder",
+    "west": "confinalandroleplay:blocks/blockborder",
+    "particle": "confinalandroleplay:blocks/blockborder"
+  }
+}

@@ -516,6 +516,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "BorderBlock",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -573,6 +581,7 @@
   ],
   "language_map": {
     "en_us": {
+      "tile.borderblock.name": "Border Block",
       "item.sarumanstaff.name": "Saruman Staff",
       "item.antygravityhelmethelmet.name": "Anty Gravity Helmet Helmet",
       "item.record.tavernlow.desc": "Música ambiental para la Taverna de Confinaland",
