@@ -20,6 +20,7 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
@@ -28,12 +29,14 @@ import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.EnumPushReaction;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.BlockDirectional;
+import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.Block;
 
-import net.mcreator.confinalandroleplay.procedure.ProcedureDoorBell01OnBlockRightClicked;
+import net.mcreator.confinalandroleplay.procedure.ProcedureDoorBellOnBlockRightClicked_sound;
+import net.mcreator.confinalandroleplay.procedure.ProcedureDoorBell01UpdateTick;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
+import java.util.Random;
 import java.util.List;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -41,7 +44,7 @@ public class BlockDoorBell01 extends ElementsConfinalandRoleplay.ModElement {
 	@GameRegistry.ObjectHolder("confinalandroleplay:doorbell01")
 	public static final Block block = null;
 	public BlockDoorBell01(ElementsConfinalandRoleplay instance) {
-		super(instance, 40);
+		super(instance, 45);
 	}
 
 	@Override
@@ -57,16 +60,16 @@ public class BlockDoorBell01 extends ElementsConfinalandRoleplay.ModElement {
 				new ModelResourceLocation("confinalandroleplay:doorbell01", "inventory"));
 	}
 	public static class BlockCustom extends Block {
-		public static final PropertyDirection FACING = BlockDirectional.FACING;
+		public static final PropertyDirection FACING = BlockHorizontal.FACING;
 		public BlockCustom() {
-			super(Material.ROCK);
+			super(Material.GROUND);
 			setUnlocalizedName("doorbell01");
 			setSoundType(SoundType.STONE);
 			setHardness(1F);
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(0);
-			setCreativeTab(null);
+			setCreativeTab(CreativeTabs.DECORATIONS);
 			this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 		}
 
@@ -90,6 +93,23 @@ public class BlockDoorBell01 extends ElementsConfinalandRoleplay.ModElement {
 		@Override
 		public boolean isFullCube(IBlockState state) {
 			return false;
+		}
+
+		@Override
+		public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+			switch ((EnumFacing) state.getValue(BlockHorizontal.FACING)) {
+				case UP :
+				case DOWN :
+				case SOUTH :
+				default :
+					return new AxisAlignedBB(0.6D, 0.7D, 0.1D, 0.4D, 0.3D, 0D);
+				case NORTH :
+					return new AxisAlignedBB(0.4D, 0.7D, 0.9D, 0.6D, 0.3D, 1D);
+				case WEST :
+					return new AxisAlignedBB(0.9D, 0.7D, 0.6D, 1D, 0.3D, 0.4D);
+				case EAST :
+					return new AxisAlignedBB(0.1D, 0.7D, 0.4D, 0D, 0.3D, 0.6D);
+			}
 		}
 
 		@Override
@@ -120,7 +140,9 @@ public class BlockDoorBell01 extends ElementsConfinalandRoleplay.ModElement {
 		@Override
 		public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta,
 				EntityLivingBase placer) {
-			return this.getDefaultState().withProperty(FACING, EnumFacing.getDirectionFromEntityLiving(pos, placer));
+			if (facing == EnumFacing.UP || facing == EnumFacing.DOWN)
+				return this.getDefaultState().withProperty(FACING, EnumFacing.NORTH);
+			return this.getDefaultState().withProperty(FACING, facing);
 		}
 
 		@Override
@@ -139,6 +161,32 @@ public class BlockDoorBell01 extends ElementsConfinalandRoleplay.ModElement {
 		}
 
 		@Override
+		public void onBlockAdded(World world, BlockPos pos, IBlockState state) {
+			super.onBlockAdded(world, pos, state);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			world.scheduleUpdate(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
+		public void updateTick(World world, BlockPos pos, IBlockState state, Random random) {
+			super.updateTick(world, pos, state, random);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureDoorBell01UpdateTick.executeProcedure($_dependencies);
+			}
+			world.scheduleUpdate(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
 		public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer entity, EnumHand hand, EnumFacing direction,
 				float hitX, float hitY, float hitZ) {
 			super.onBlockActivated(world, pos, state, entity, hand, direction, hitX, hitY, hitZ);
@@ -151,7 +199,7 @@ public class BlockDoorBell01 extends ElementsConfinalandRoleplay.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureDoorBell01OnBlockRightClicked.executeProcedure($_dependencies);
+				ProcedureDoorBellOnBlockRightClicked_sound.executeProcedure($_dependencies);
 			}
 			return true;
 		}

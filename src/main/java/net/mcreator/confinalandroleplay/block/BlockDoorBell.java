@@ -60,7 +60,7 @@ public class BlockDoorBell extends ElementsConfinalandRoleplay.ModElement {
 	public static class BlockCustom extends Block {
 		public static final PropertyDirection FACING = BlockHorizontal.FACING;
 		public BlockCustom() {
-			super(Material.ROCK);
+			super(Material.GROUND);
 			setUnlocalizedName("doorbell");
 			setSoundType(SoundType.STONE);
 			setHardness(1F);
@@ -91,6 +91,23 @@ public class BlockDoorBell extends ElementsConfinalandRoleplay.ModElement {
 		@Override
 		public boolean isFullCube(IBlockState state) {
 			return false;
+		}
+
+		@Override
+		public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+			switch ((EnumFacing) state.getValue(BlockHorizontal.FACING)) {
+				case UP :
+				case DOWN :
+				case SOUTH :
+				default :
+					return new AxisAlignedBB(0.6D, 0.7D, 0.1D, 0.4D, 0.3D, 0D);
+				case NORTH :
+					return new AxisAlignedBB(0.4D, 0.7D, 0.9D, 0.6D, 0.3D, 1D);
+				case WEST :
+					return new AxisAlignedBB(0.9D, 0.7D, 0.6D, 1D, 0.3D, 0.4D);
+				case EAST :
+					return new AxisAlignedBB(0.1D, 0.7D, 0.4D, 0D, 0.3D, 0.6D);
+			}
 		}
 
 		@Override

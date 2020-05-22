@@ -13,11 +13,11 @@
     "rotationMode": 3,
     "hasTransparency": true,
     "transparencyType": "SOLID",
-    "mx": 0.0,
-    "my": 0.0,
-    "mz": 0.0,
-    "Mx": 1.0,
-    "My": 1.0,
+    "mx": 0.4,
+    "my": 0.7,
+    "mz": 0.9,
+    "Mx": 0.6,
+    "My": 0.3,
     "Mz": 1.0,
     "faceShape": "SOLID",
     "name": "Door Bell",
@@ -42,7 +42,7 @@
     "canProvidePower": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "EARTH"
     },
     "tickRate": 10,
     "tickRandomly": false,

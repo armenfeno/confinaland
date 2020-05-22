@@ -17,14 +17,6 @@
     "facing=west": {
       "model": "confinalandroleplay:doorbell01",
       "y": 270
-    },
-    "facing=up": {
-      "model": "confinalandroleplay:doorbell01",
-      "x": 270
-    },
-    "facing=down": {
-      "model": "confinalandroleplay:doorbell01",
-      "x": 90
     }
   }
 }

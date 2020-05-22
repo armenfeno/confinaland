@@ -534,14 +534,6 @@
       "ids": {}
     },
     {
-      "name": "DoorBell01",
-      "type": "block",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "DoorBellOnBlockRightClicked_sound",
       "type": "procedure",
       "sortid": 43,
@@ -570,7 +562,7 @@
       }
     },
     {
-      "name": "DoorBell01OnBlockRightClicked",
+      "name": "DoorBell01UpdateTick",
       "type": "procedure",
       "sortid": 44,
       "compiles": true,
@@ -596,6 +588,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "DoorBell01",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
