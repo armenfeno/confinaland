@@ -2,16 +2,16 @@
   "_fv": 6,
   "_type": "block",
   "definition": {
-    "texture": "blockborder",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "rotura_palantir",
+    "textureTop": "blockborder",
+    "textureLeft": "blockborder",
+    "textureFront": "blockborder",
+    "textureRight": "blockborder",
+    "textureBack": "blockborder",
+    "renderType": 2,
+    "customModelName": "borderblock:default",
     "rotationMode": 0,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "transparencyType": "TRANSLUCENT",
     "mx": 0.0,
     "my": 0.0,
@@ -21,12 +21,15 @@
     "Mz": 1.0,
     "faceShape": "SOLID",
     "name": "Border Block",
-    "specialInfo": [],
+    "specialInfo": [
+      "Bloque delimitador de la",
+      "zona de juego"
+    ],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:ConfinalandPolice"
+      "value": "BUILDING_BLOCKS"
     },
     "destroyTool": "Not specified",
     "affectedBySilkTouch": false,
@@ -38,7 +41,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 255,
+    "lightOpacity": 0,
     "material": {
       "value": "BARRIER"
     },
@@ -47,7 +50,7 @@
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:BorderBlock"
     },
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -56,10 +59,10 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "SNOW"
+      "value": "GLASS"
     },
     "luminance": 0.0,
-    "unbreakable": false,
+    "unbreakable": true,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
@@ -84,9 +87,9 @@
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyPerChunks": 1,
+    "frequencyOnChunk": 1,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 0
   }
 }
