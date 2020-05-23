@@ -657,11 +657,6 @@
       "category": "player"
     },
     {
-      "name": "confinacoin",
-      "file": "efecto-de-sonido-caja-registradora_mp3cut.net",
-      "category": "master"
-    },
-    {
       "name": "myers",
       "file": "myers",
       "category": "player"
@@ -695,6 +690,16 @@
       "name": "martillojuez",
       "file": "martillo-efecto-de-sonido_mp3cut.net",
       "category": "master"
+    },
+    {
+      "name": "confinacoin",
+      "file": "efecto-de-sonido-caja-registradora_mp3cut.net",
+      "category": "master"
+    },
+    {
+      "name": "mariobros",
+      "file": "ario_ros",
+      "category": "music"
     }
   ],
   "language_map": {
