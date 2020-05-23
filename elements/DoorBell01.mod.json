@@ -39,7 +39,7 @@
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
     "lightOpacity": 0,
     "material": {
       "value": "EARTH"

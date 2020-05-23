@@ -159,6 +159,11 @@ public class BlockDoorBell extends ElementsConfinalandRoleplay.ModElement {
 		}
 
 		@Override
+		public boolean canConnectRedstone(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing side) {
+			return true;
+		}
+
+		@Override
 		public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer entity, EnumHand hand, EnumFacing direction,
 				float hitX, float hitY, float hitZ) {
 			super.onBlockActivated(world, pos, state, entity, hand, direction, hitX, hitY, hitZ);
