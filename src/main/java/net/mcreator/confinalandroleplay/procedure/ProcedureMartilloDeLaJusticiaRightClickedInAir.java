@@ -35,6 +35,6 @@ public class ProcedureMartilloDeLaJusticiaRightClickedInAir extends ElementsConf
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-				.getObject(new ResourceLocation("confinalandroleplay:martillojuez")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+				.getObject(new ResourceLocation("confinalandroleplay:justicehammer")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
 	}
 }

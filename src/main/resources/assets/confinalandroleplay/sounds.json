@@ -89,15 +89,6 @@
       }
     ]
   },
-  "martillojuez": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:martillo-efecto-de-sonido_mp3cut.net",
-        "stream": false
-      }
-    ]
-  },
   "confinacoin": {
     "category": "master",
     "sounds": [
@@ -113,6 +104,15 @@
       {
         "name": "confinalandroleplay:ario_ros",
         "stream": true
+      }
+    ]
+  },
+  "justicehammer": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:justicehammer",
+        "stream": false
       }
     ]
   }
