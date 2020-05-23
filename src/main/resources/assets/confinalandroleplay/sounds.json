@@ -97,5 +97,14 @@
         "stream": false
       }
     ]
+  },
+  "martillojuez": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:martillo-efecto-de-sonido_mp3cut.net",
+        "stream": false
+      }
+    ]
   }
 }

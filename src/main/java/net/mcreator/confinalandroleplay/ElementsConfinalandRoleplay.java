@@ -76,6 +76,8 @@ public class ElementsConfinalandRoleplay implements IFuelHandler, IWorldGenerato
 				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "tavernmusic")));
 		sounds.put(new ResourceLocation("confinalandroleplay", "doorbell"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "doorbell")));
+		sounds.put(new ResourceLocation("confinalandroleplay", "martillojuez"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "martillojuez")));
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {
