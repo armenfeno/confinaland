@@ -89,11 +89,11 @@
       }
     ]
   },
-  "martillojuez": {
+  "confinacoin": {
     "category": "master",
     "sounds": [
       {
-        "name": "confinalandroleplay:martillo-efecto-de-sonido_mp3cut.net",
+        "name": "confinalandroleplay:efecto-de-sonido-caja-registradora_mp3cut.net",
         "stream": false
       }
     ]
@@ -107,11 +107,11 @@
       }
     ]
   },
-  "confinacoin": {
+  "justicehammer": {
     "category": "master",
     "sounds": [
       {
-        "name": "confinalandroleplay:efecto-de-sonido-caja-registradora_mp3cut.net",
+        "name": "confinalandroleplay:justicehammer",
         "stream": false
       }
     ]
