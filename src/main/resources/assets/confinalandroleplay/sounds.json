@@ -98,21 +98,21 @@
       }
     ]
   },
-  "confinacoin": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:efecto-de-sonido-caja-registradora_mp3cut.net",
-        "stream": false
-      }
-    ]
-  },
   "mariobros": {
     "category": "music",
     "sounds": [
       {
         "name": "confinalandroleplay:ario_ros",
         "stream": true
+      }
+    ]
+  },
+  "confinacoin": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:efecto-de-sonido-caja-registradora_mp3cut.net",
+        "stream": false
       }
     ]
   }
