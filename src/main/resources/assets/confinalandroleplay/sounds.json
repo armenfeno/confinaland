@@ -115,5 +115,14 @@
         "stream": false
       }
     ]
+  },
+  "armengolshop": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:armengolshop",
+        "stream": true
+      }
+    ]
   }
 }

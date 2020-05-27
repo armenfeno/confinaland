@@ -700,6 +700,11 @@
       "name": "justicehammer",
       "file": "justicehammer",
       "category": "master"
+    },
+    {
+      "name": "armengolshop",
+      "file": "armengolshop",
+      "category": "music"
     }
   ],
   "language_map": {
