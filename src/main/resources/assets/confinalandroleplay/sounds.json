@@ -124,5 +124,23 @@
         "stream": true
       }
     ]
+  },
+  "fart1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:art1",
+        "stream": false
+      }
+    ]
+  },
+  "fart2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:art2",
+        "stream": false
+      }
+    ]
   }
 }

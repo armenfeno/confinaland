@@ -632,6 +632,42 @@
           }
         ]
       }
+    },
+    {
+      "name": "FartMaker",
+      "type": "item",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FartMakerRightClickedInAir",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -705,6 +741,16 @@
       "name": "armengolshop",
       "file": "armengolshop",
       "category": "music"
+    },
+    {
+      "name": "fart1",
+      "file": "art1",
+      "category": "player"
+    },
+    {
+      "name": "fart2",
+      "file": "art2",
+      "category": "player"
     }
   ],
   "language_map": {
@@ -720,6 +766,7 @@
       "tile.sarumanpalantir.name": "Saruman Palantir",
       "tile.doorbell.name": "Door Bell",
       "item.martillodelajusticia.name": "Martillo De La Justicia",
+      "item.fartmaker.name": "Fart Maker",
       "item.dragonballscouterbody.name": "Dragon Ball Scouter Body",
       "item.confinacoingold.name": "Gold Confinacoin",
       "item.sunglassesboots.name": "Sunglasses Boots",
