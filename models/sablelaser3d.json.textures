@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "ableaser",
+        "1": "able"
+      },
+      "name": "default"
+    }
+  }
+}

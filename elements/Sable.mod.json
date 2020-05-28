@@ -1,0 +1,35 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "sablelaser",
+    "customModelName": "sablelaser3d:default",
+    "name": "Sable",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "onRightClickedInAir": {
+      "name": "SableRightClickedInAir"
+    },
+    "onEntityHitWith": {
+      "name": "SableMobIsHitWithTool"
+    },
+    "onItemInUseTick": {
+      "name": "SableToolInHandTicks"
+    },
+    "onStoppedUsing": {
+      "name": "SableOnPlayerStoppedUsing"
+    }
+  }
+}
