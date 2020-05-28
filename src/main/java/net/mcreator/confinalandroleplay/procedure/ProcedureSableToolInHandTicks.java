@@ -38,7 +38,7 @@ public class ProcedureSableToolInHandTicks extends ElementsConfinalandRoleplay.M
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		entity.getEntityData().setDouble("counter1", ((entity.getEntityData().getDouble("counter1")) + 1));
-		if ((((entity.getEntityData().getDouble("counter1")) % 20) == 0)) {
+		if ((((entity.getEntityData().getDouble("counter1")) % 40) == 0)) {
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);

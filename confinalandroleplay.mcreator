@@ -909,16 +909,6 @@
       "category": "player"
     },
     {
-      "name": "sablewaiting",
-      "file": "lightsaber-sound-effect-waiting",
-      "category": "master"
-    },
-    {
-      "name": "sableignition",
-      "file": "lightsaber-sound-effect-ignition",
-      "category": "master"
-    },
-    {
       "name": "sablepowerdown",
       "file": "lightsaber-sound-effect-power-down",
       "category": "master"
@@ -941,6 +931,11 @@
     {
       "name": "sablefail02",
       "file": "lightsaber-sound-effect-fail02",
+      "category": "master"
+    },
+    {
+      "name": "sablewaiting",
+      "file": "lightsaber-sound-effect-waiting",
       "category": "master"
     }
   ],

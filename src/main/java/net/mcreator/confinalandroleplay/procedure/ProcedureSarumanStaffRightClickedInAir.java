@@ -7,6 +7,7 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.command.ICommandSender;
 
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
@@ -80,5 +81,6 @@ public class ProcedureSarumanStaffRightClickedInAir extends ElementsConfinalandR
 				}
 			}, "weather thunder");
 		}
+		world.addWeatherEffect(new EntityLightningBolt(world, (int) x, (int) y, (int) z, false));
 	}
 }
