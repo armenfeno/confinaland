@@ -152,15 +152,6 @@
       }
     ]
   },
-  "sablehit00": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:lightsaber-sound-effect-hit00",
-        "stream": false
-      }
-    ]
-  },
   "sablefail00": {
     "category": "master",
     "sounds": [
@@ -193,6 +184,42 @@
     "sounds": [
       {
         "name": "confinalandroleplay:lightsaber-sound-effect-waiting",
+        "stream": false
+      }
+    ]
+  },
+  "sablehit00": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:lightsaber-sound-effect-hit00",
+        "stream": false
+      }
+    ]
+  },
+  "sablehit01": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:lightsaber-sound-effect-hit01",
+        "stream": false
+      }
+    ]
+  },
+  "sablehit02": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:lightsaber-sound-effect-hit02",
+        "stream": false
+      }
+    ]
+  },
+  "sableignition": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:lightsaber-sound-effect-ignition",
         "stream": false
       }
     ]

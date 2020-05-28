@@ -34,7 +34,15 @@ public class ProcedureSableMobIsHitWithTool extends ElementsConfinalandRoleplay.
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-				.getObject(new ResourceLocation("confinalandroleplay:sablehit00")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+		if ((Math.random() > 0.66)) {
+			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
+					.getObject(new ResourceLocation("confinalandroleplay:sablehit00")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+		} else if ((Math.random() < 0.33)) {
+			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
+					.getObject(new ResourceLocation("confinalandroleplay:sablehit01")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+		} else {
+			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
+					.getObject(new ResourceLocation("confinalandroleplay:sablehit02")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+		}
 	}
 }

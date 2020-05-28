@@ -2,8 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "ableaser",
-        "1": "able_green"
+        "0": "ableaser"
       },
       "name": "default"
     }

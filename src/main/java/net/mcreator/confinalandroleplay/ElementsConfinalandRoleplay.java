@@ -88,8 +88,6 @@ public class ElementsConfinalandRoleplay implements IFuelHandler, IWorldGenerato
 				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "fart2")));
 		sounds.put(new ResourceLocation("confinalandroleplay", "sablepowerdown"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "sablepowerdown")));
-		sounds.put(new ResourceLocation("confinalandroleplay", "sablehit00"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "sablehit00")));
 		sounds.put(new ResourceLocation("confinalandroleplay", "sablefail00"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "sablefail00")));
 		sounds.put(new ResourceLocation("confinalandroleplay", "sablefail01"),
@@ -98,6 +96,14 @@ public class ElementsConfinalandRoleplay implements IFuelHandler, IWorldGenerato
 				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "sablefail02")));
 		sounds.put(new ResourceLocation("confinalandroleplay", "sablewaiting"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "sablewaiting")));
+		sounds.put(new ResourceLocation("confinalandroleplay", "sablehit00"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "sablehit00")));
+		sounds.put(new ResourceLocation("confinalandroleplay", "sablehit01"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "sablehit01")));
+		sounds.put(new ResourceLocation("confinalandroleplay", "sablehit02"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "sablehit02")));
+		sounds.put(new ResourceLocation("confinalandroleplay", "sableignition"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "sableignition")));
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {

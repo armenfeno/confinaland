@@ -25,7 +25,6 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableToolInHandTicks;
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableRightClickedInAir;
-import net.mcreator.confinalandroleplay.procedure.ProcedureSableOnPlayerStoppedUsing;
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableMobIsHitWithTool;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
@@ -44,7 +43,7 @@ public class ItemSable extends ElementsConfinalandRoleplay.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("SABLE", 1, 100, 4f, 0f, 2)) {
+		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("SABLE", 1, 0, 4f, 0f, 2)) {
 			@Override
 			public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot slot) {
 				Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);
@@ -97,22 +96,6 @@ public class ItemSable extends ElementsConfinalandRoleplay.ModElement {
 					ProcedureSableMobIsHitWithTool.executeProcedure($_dependencies);
 				}
 				return true;
-			}
-
-			@Override
-			public void onPlayerStoppedUsing(ItemStack itemstack, World world, EntityLivingBase entity, int time) {
-				super.onPlayerStoppedUsing(itemstack, world, entity, time);
-				int x = (int) entity.posX;
-				int y = (int) entity.posY;
-				int z = (int) entity.posZ;
-				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					ProcedureSableOnPlayerStoppedUsing.executeProcedure($_dependencies);
-				}
 			}
 
 			@Override
