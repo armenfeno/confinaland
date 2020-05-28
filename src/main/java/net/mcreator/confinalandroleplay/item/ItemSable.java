@@ -123,6 +123,11 @@ public class ItemSable extends ElementsConfinalandRoleplay.ModElement {
 				int z = (int) entity.posZ;
 				if (entity instanceof EntityLivingBase && ((EntityLivingBase) entity).getHeldItemMainhand().equals(itemstack)) {
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
 					ProcedureSableToolInHandTicks.executeProcedure($_dependencies);
 				}
 			}

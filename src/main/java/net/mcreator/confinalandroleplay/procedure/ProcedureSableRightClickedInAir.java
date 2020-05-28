@@ -37,12 +37,12 @@ public class ProcedureSableRightClickedInAir extends ElementsConfinalandRoleplay
 		if ((Math.random() > 0.66)) {
 			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
 					.getObject(new ResourceLocation("confinalandroleplay:sablefail00")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
-		} else if ((Math.random() <= (0.66 / 0.33))) {
-			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-					.getObject(new ResourceLocation("confinalandroleplay:sablefail01")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
 		} else if ((Math.random() < 0.33)) {
 			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
 					.getObject(new ResourceLocation("confinalandroleplay:sablefail02")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+		} else {
+			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
+					.getObject(new ResourceLocation("confinalandroleplay:sablefail01")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
 		}
 	}
 }
