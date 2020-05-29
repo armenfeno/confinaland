@@ -91,17 +91,16 @@ public class ProcedureSarumanStaffRightClickedInAir extends ElementsConfinalandR
 			world.addWeatherEffect(
 					new EntityLightningBolt(world,
 							(int) (entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-									entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
-											entity.getLook(1f).z * 30),
+									entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 100, entity.getLook(1f).y * 100,
+											entity.getLook(1f).z * 100),
 									false, false, true).getBlockPos().getX()),
+							(int) (entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+									entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 100, entity.getLook(1f).y * 100,
+											entity.getLook(1f).z * 100),
+									false, false, true).getBlockPos().getY()),
 							(int) (entity.world
-									.rayTraceBlocks(entity.getPositionEyes(1f),
-											entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
-													entity.getLook(1f).z * 30),
-											false, false, true)
-									.getBlockPos().getY()),
-							(int) (entity.world.rayTraceBlocks(entity.getPositionEyes(1f), entity.getPositionEyes(1f)
-									.addVector(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30), false, false, true)
+									.rayTraceBlocks(entity.getPositionEyes(1f), entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 100,
+											entity.getLook(1f).y * 100, entity.getLook(1f).z * 100), false, false, true)
 									.getBlockPos().getZ()),
 							false));
 		}
