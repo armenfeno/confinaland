@@ -427,6 +427,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "int"
           },
@@ -850,6 +854,17 @@
             "type": "world"
           }
         ]
+      }
+    },
+    {
+      "name": "SarumanStaffRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": []
       }
     }
   ],
