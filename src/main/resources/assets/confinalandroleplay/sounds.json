@@ -26,15 +26,6 @@
       }
     ]
   },
-  "dbzjump": {
-    "category": "player",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:jump",
-        "stream": false
-      }
-    ]
-  },
   "myers": {
     "category": "player",
     "sounds": [
@@ -220,6 +211,42 @@
     "sounds": [
       {
         "name": "confinalandroleplay:lightsaber-sound-effect-ignition",
+        "stream": false
+      }
+    ]
+  },
+  "canvidelloc": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:canvidelloc",
+        "stream": false
+      }
+    ]
+  },
+  "cellstep": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:cellstep",
+        "stream": false
+      }
+    ]
+  },
+  "dragonballsound": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:dragonballsoundl.",
+        "stream": false
+      }
+    ]
+  },
+  "dbjump": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:dbjump",
         "stream": false
       }
     ]

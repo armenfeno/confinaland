@@ -1,0 +1,32 @@
+{
+  "_fv": 6,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "bastomagic",
+    "customModelName": "Normal",
+    "name": "Basto Magic",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.5,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 7.0,
+    "specialInfo": [
+      "Bastó Màgic d'en Goku"
+    ],
+    "hasGlow": false,
+    "onRightClickedInAir": {
+      "name": "BastoMagicRightClickedInAir"
+    },
+    "onItemInUseTick": {
+      "name": "DragonBallScouterItemInHandTick"
+    }
+  }
+}

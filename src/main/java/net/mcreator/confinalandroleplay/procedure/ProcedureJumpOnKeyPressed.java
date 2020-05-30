@@ -5,9 +5,10 @@ import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.confinalandroleplay.item.ItemDragonBallScouter;
+import net.mcreator.confinalandroleplay.item.ItemBastoMagic;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -42,10 +43,10 @@ public class ProcedureJumpOnKeyPressed extends ElementsConfinalandRoleplay.ModEl
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		if ((((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).inventory.armorInventory.get(3) : ItemStack.EMPTY)
-				.getItem() == new ItemStack(ItemDragonBallScouter.helmet, (int) (1)).getItem())) {
+		if ((((entity instanceof EntityLivingBase) ? ((EntityLivingBase) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == new ItemStack(ItemBastoMagic.block, (int) (1)).getItem())) {
 			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-					.getObject(new ResourceLocation("confinalandroleplay:dbzjump")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					.getObject(new ResourceLocation("confinalandroleplay:dbjump")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
 		}
 	}
 }

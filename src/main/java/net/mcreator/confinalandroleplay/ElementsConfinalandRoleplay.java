@@ -60,8 +60,6 @@ public class ElementsConfinalandRoleplay implements IFuelHandler, IWorldGenerato
 				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "sirena_policia")));
 		sounds.put(new ResourceLocation("confinalandroleplay", "super_saiyan"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "super_saiyan")));
-		sounds.put(new ResourceLocation("confinalandroleplay", "dbzjump"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "dbzjump")));
 		sounds.put(new ResourceLocation("confinalandroleplay", "myers"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "myers")));
 		sounds.put(new ResourceLocation("confinalandroleplay", "sauron_speech"),
@@ -104,6 +102,14 @@ public class ElementsConfinalandRoleplay implements IFuelHandler, IWorldGenerato
 				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "sablehit02")));
 		sounds.put(new ResourceLocation("confinalandroleplay", "sableignition"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "sableignition")));
+		sounds.put(new ResourceLocation("confinalandroleplay", "canvidelloc"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "canvidelloc")));
+		sounds.put(new ResourceLocation("confinalandroleplay", "cellstep"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "cellstep")));
+		sounds.put(new ResourceLocation("confinalandroleplay", "dragonballsound"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "dragonballsound")));
+		sounds.put(new ResourceLocation("confinalandroleplay", "dbjump"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("confinalandroleplay", "dbjump")));
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {
