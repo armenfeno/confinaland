@@ -1,8 +1,8 @@
 {
   "parent": "confinalandroleplay:custom/palantir_3d",
   "textures": {
-    "all": "confinalandroleplay:blocks/rotura_palantir",
-    "particle": "confinalandroleplay:blocks/rotura_palantir",
+    "all": "confinalandroleplay:blocks/alantir",
+    "particle": "confinalandroleplay:blocks/alantir",
     "0": "confinalandroleplay:blocks/alantir",
     "1": "confinalandroleplay:blocks/animation_texture",
     "2": "confinalandroleplay:blocks/animation_texture_00",
