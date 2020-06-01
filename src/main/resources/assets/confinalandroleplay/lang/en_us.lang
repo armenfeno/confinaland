@@ -1,6 +1,6 @@
 tile.borderblock.name=Border Block
-item.sable.name=Sable
 item.sarumanstaff.name=Saruman Staff
+item.sable.name=Sable
 item.antygravityhelmethelmet.name=Anty Gravity Helmet Helmet
 item.record.tavernlow.desc=Música ambiental para la Taverna de Confinaland
 item.dragonballscouterboots.name=Dragon Ball Scouter Boots
@@ -24,7 +24,6 @@ tile.dragonball4stars.name=Bola de Drac 4 estrelles
 item.myersknife.name=Myers Knife
 item.dragonballscouterlegs.name=Dragon Ball Scouter Leggings
 item.sunglassesbody.name=Sunglasses Body
-item.asdads.name=Asdads
 item.antygravityhelmetlegs.name=Anty Gravity Helmet Leggings
 item.porra.name=Porra
 item.antygravityhelmetbody.name=Anty Gravity Helmet Body
