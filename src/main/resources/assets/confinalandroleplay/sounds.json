@@ -243,10 +243,10 @@
     ]
   },
   "dragonballsound": {
-    "category": "master",
+    "category": "player",
     "sounds": [
       {
-        "name": "confinalandroleplay:dragonballsoundl.",
+        "name": "confinalandroleplay:dragonballsound",
         "stream": false
       }
     ]

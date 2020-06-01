@@ -55,8 +55,8 @@ public class ProcedureSableMangoRightClickedOnBlock extends ElementsConfinalandR
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(((EntityPlayer) entity), _setstack);
 			}
+			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
+					.getObject(new ResourceLocation("confinalandroleplay:sableignition")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
 		}
-		world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-				.getObject(new ResourceLocation("confinalandroleplay:sableignition")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
 	}
 }

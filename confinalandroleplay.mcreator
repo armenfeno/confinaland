@@ -721,7 +721,24 @@
       "locked_code": false,
       "ids": {},
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -891,6 +908,10 @@
           {
             "name": "z",
             "type": "int"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "world",
@@ -1099,8 +1120,8 @@
     },
     {
       "name": "dragonballsound",
-      "file": "dragonballsoundl.",
-      "category": "master"
+      "file": "dragonballsound",
+      "category": "player"
     }
   ],
   "language_map": {
