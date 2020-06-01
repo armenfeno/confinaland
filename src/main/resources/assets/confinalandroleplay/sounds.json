@@ -233,20 +233,20 @@
       }
     ]
   },
-  "dragonballsound": {
-    "category": "block",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:dragonballsoundl.",
-        "stream": false
-      }
-    ]
-  },
   "dbjump": {
     "category": "player",
     "sounds": [
       {
         "name": "confinalandroleplay:dbjump",
+        "stream": false
+      }
+    ]
+  },
+  "dragonballsound": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:dragonballsoundl.",
         "stream": false
       }
     ]

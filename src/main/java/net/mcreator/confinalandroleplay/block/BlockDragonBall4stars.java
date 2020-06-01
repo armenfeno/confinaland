@@ -8,7 +8,9 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.world.World;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.EnumHand;
@@ -69,6 +71,28 @@ public class BlockDragonBall4stars extends ElementsConfinalandRoleplay.ModElemen
 		@Override
 		public BlockRenderLayer getBlockLayer() {
 			return BlockRenderLayer.TRANSLUCENT;
+		}
+
+		@Override
+		public boolean isFullCube(IBlockState state) {
+			return false;
+		}
+
+		@Override
+		public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+			switch ((EnumFacing) state.getValue(BlockHorizontal.FACING)) {
+				case UP :
+				case DOWN :
+				case SOUTH :
+				default :
+					return new AxisAlignedBB(1D, 0D, 1D, 0D, 0.4D, 0D);
+				case NORTH :
+					return new AxisAlignedBB(0D, 0D, 0D, 1D, 0.4D, 1D);
+				case WEST :
+					return new AxisAlignedBB(0D, 0D, 1D, 1D, 0.4D, 0D);
+				case EAST :
+					return new AxisAlignedBB(1D, 0D, 0D, 0D, 0.4D, 1D);
+			}
 		}
 
 		@Override
