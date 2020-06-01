@@ -13,11 +13,11 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.5,
-    "damageCount": 0,
+    "damageCount": 10,
     "destroyAnyBlock": false,
     "stayInGridWhenCrafting": false,
     "enableMeleeDamage": true,
-    "damageVsEntity": 7.0,
+    "damageVsEntity": 15.0,
     "specialInfo": [
       "Bastó Màgic d'en Goku"
     ],

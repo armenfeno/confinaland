@@ -49,38 +49,37 @@ public class ProcedureBastoMagicRightClickedInAir extends ElementsConfinalandRol
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		World world = (World) dependencies.get("world");
 		if ((((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).experienceLevel : 0) >= 1)) {
-			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-					.getObject(new ResourceLocation("confinalandroleplay:canvidelloc")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
-			entity.setPositionAndUpdate(
-					(entity.world
-							.rayTraceBlocks(entity.getPositionEyes(1f),
-									entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 100, entity.getLook(1f).y * 100,
-											entity.getLook(1f).z * 100),
-									false, false, true)
-							.getBlockPos().getX()),
-					((entity.world
-							.rayTraceBlocks(entity.getPositionEyes(1f),
-									entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 100, entity.getLook(1f).y * 100,
-											entity.getLook(1f).z * 100),
-									false, false, true)
-							.getBlockPos().getY()) + 1),
-					(entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-							entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 100, entity.getLook(1f).y * 100, entity.getLook(1f).z * 100),
-							false, false, true).getBlockPos().getZ()));
-			world.playSound((EntityPlayer) null, (entity.posX), (entity.posY), (entity.posZ),
-					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-							.getObject(new ResourceLocation("confinalandroleplay:canvidelloc")),
-					SoundCategory.NEUTRAL, (float) 1, (float) 1);
-			if (entity instanceof EntityPlayer)
-				((EntityPlayer) entity).addExperienceLevel(-((int) 0.5));
-			if (entity instanceof EntityPlayer)
-				((EntityPlayer) entity).getFoodStats()
-						.setFoodLevel((int) (((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).getFoodStats().getFoodLevel() : 0) - 5));
-			if (entity instanceof EntityPlayer)
-				((EntityPlayer) entity).getCooldownTracker().setCooldown(itemstack.getItem(), (int) 10);
-			if (itemstack.attemptDamageItem((int) 8, new Random(), null)) {
-				itemstack.shrink(1);
-				itemstack.setItemDamage(0);
+			if (((itemstack.getItemDamage()) != 9)) {
+				if ((((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).getFoodStats().getFoodLevel() : 0) >= 0)) {
+					world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
+							.getObject(new ResourceLocation("confinalandroleplay:canvidelloc")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					entity.setPositionAndUpdate(
+							(entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+									entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 500, entity.getLook(1f).y * 500,
+											entity.getLook(1f).z * 500),
+									false, false, true).getBlockPos().getX()),
+							((entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+									entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 500, entity.getLook(1f).y * 500,
+											entity.getLook(1f).z * 500),
+									false, false, true).getBlockPos().getY()) + 1),
+							(entity.world.rayTraceBlocks(entity.getPositionEyes(1f), entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 500,
+									entity.getLook(1f).y * 500, entity.getLook(1f).z * 500), false, false, true).getBlockPos().getZ()));
+					world.playSound((EntityPlayer) null, (entity.posX), (entity.posY), (entity.posZ),
+							(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
+									.getObject(new ResourceLocation("confinalandroleplay:canvidelloc")),
+							SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					if (entity instanceof EntityPlayer)
+						((EntityPlayer) entity).addExperienceLevel(-((int) 1));
+					if (entity instanceof EntityPlayer)
+						((EntityPlayer) entity).getFoodStats().setFoodLevel(
+								(int) (((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).getFoodStats().getFoodLevel() : 0) - 5));
+					if (entity instanceof EntityPlayer)
+						((EntityPlayer) entity).getCooldownTracker().setCooldown(itemstack.getItem(), (int) 1000);
+					if (itemstack.attemptDamageItem((int) 1, new Random(), null)) {
+						itemstack.shrink(1);
+						itemstack.setItemDamage(0);
+					}
+				}
 			}
 		}
 	}

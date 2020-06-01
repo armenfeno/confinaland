@@ -723,6 +723,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "int"
           },
@@ -954,6 +958,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "int"
           },
@@ -976,6 +984,46 @@
       "name": "DragonBall4stars",
       "type": "block",
       "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ApagarsableOnKeyPressed",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Apagarsable",
+      "type": "keybind",
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -1127,11 +1175,12 @@
   "language_map": {
     "en_us": {
       "tile.borderblock.name": "Border Block",
+      "item.sable.name": "Sable laser",
       "item.sarumanstaff.name": "Saruman Staff",
-      "item.sable.name": "Sable",
       "item.antygravityhelmethelmet.name": "Anty Gravity Helmet Helmet",
       "item.record.tavernlow.desc": "Música ambiental para la Taverna de Confinaland",
       "item.dragonballscouterboots.name": "Dragon Ball Scouter Boots",
+      "key.mcreator.apagarsable": "Apagarsable",
       "item.confinalandkey.name": "Confinaland Key",
       "item.sunglasseshelmet.name": "Sun glasses",
       "item.sunglasses01body.name": "Sun Glasses01 Body",
@@ -1162,7 +1211,7 @@
       "item.confinacoinsilver.name": "Silver Confinacoin",
       "item.tavernlow.name": "Tavern Low",
       "item.mendingmaker.name": "Empty Mending Book",
-      "item.sablemango.name": "Sable_",
+      "item.sablemango.name": "Sable_laser",
       "item.sunglasseslegs.name": "Sunglasses Leggings",
       "item.bastomagic.name": "Basto Magic"
     }

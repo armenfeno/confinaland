@@ -5,7 +5,7 @@
     "renderType": 1,
     "texture": "sablelaser",
     "customModelName": "sablemango3d:default",
-    "name": "Sable_",
+    "name": "Sable_laser",
     "creativeTab": {
       "value": "COMBAT"
     },
@@ -19,7 +19,7 @@
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [],
-    "onRightClickedOnBlock": {
+    "onRightClickedInAir": {
       "name": "SableMangoRightClickedOnBlock"
     }
   }

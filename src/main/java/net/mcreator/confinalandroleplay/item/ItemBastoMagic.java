@@ -51,7 +51,7 @@ public class ItemBastoMagic extends ElementsConfinalandRoleplay.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			setMaxDamage(0);
+			setMaxDamage(10);
 			maxStackSize = 64;
 			setUnlocalizedName("bastomagic");
 			setRegistryName("bastomagic");
@@ -78,7 +78,7 @@ public class ItemBastoMagic extends ElementsConfinalandRoleplay.ModElement {
 			Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);
 			if (slot == EntityEquipmentSlot.MAINHAND) {
 				multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(),
-						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Item modifier", (double) 3, 0));
+						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Item modifier", (double) 11, 0));
 				multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(), new AttributeModifier(ATTACK_SPEED_MODIFIER, "Item modifier", -2.4, 0));
 			}
 			return multimap;

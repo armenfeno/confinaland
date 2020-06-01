@@ -43,7 +43,7 @@ public class ItemSable extends ElementsConfinalandRoleplay.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("SABLE", 1, 0, 4f, 0f, 2)) {
+		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("SABLE", 1, 0, 4f, 11f, 2)) {
 			@Override
 			public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot slot) {
 				Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);
@@ -71,6 +71,7 @@ public class ItemSable extends ElementsConfinalandRoleplay.ModElement {
 				int z = (int) entity.posZ;
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("entity", entity);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
