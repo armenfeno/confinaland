@@ -45,18 +45,16 @@ public class ProcedureApagarsableOnKeyPressed extends ElementsConfinalandRolepla
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		if (((entity instanceof EntityPlayer)
-				? ((EntityPlayer) entity).inventory.hasItemStack(new ItemStack(ItemSableMango.block, (int) (1)))
-				: false)) {
+		if (((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).inventory.hasItemStack(new ItemStack(ItemSable.block, (int) (1))) : false)) {
 			if (entity instanceof EntityPlayer)
-				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemSableMango.block, (int) (1)).getItem(), -1, (int) 1, null);
+				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemSable.block, (int) (1)).getItem(), -1, (int) 1, null);
 			if (entity instanceof EntityPlayer) {
-				ItemStack _setstack = new ItemStack(ItemSable.block, (int) (1));
+				ItemStack _setstack = new ItemStack(ItemSableMango.block, (int) (1));
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(((EntityPlayer) entity), _setstack);
 			}
 			world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-					.getObject(new ResourceLocation("confinalandroleplay:sableignition")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					.getObject(new ResourceLocation("confinalandroleplay:sablepowerdown")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
 		}
 	}
 }

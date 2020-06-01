@@ -9,8 +9,10 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.EnumHand;
-import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumActionResult;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -59,12 +61,13 @@ public class ItemSableMango extends ElementsConfinalandRoleplay.ModElement {
 			}
 
 			@Override
-			public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer entity, EnumHand hand) {
-				ActionResult<ItemStack> retval = super.onItemRightClick(world, entity, hand);
-				ItemStack itemstack = retval.getResult();
-				int x = (int) entity.posX;
-				int y = (int) entity.posY;
-				int z = (int) entity.posZ;
+			public EnumActionResult onItemUse(EntityPlayer entity, World world, BlockPos pos, EnumHand hand, EnumFacing direction, float hitX,
+					float hitY, float hitZ) {
+				EnumActionResult retval = super.onItemUse(entity, world, pos, hand, direction, hitX, hitY, hitZ);
+				int x = pos.getX();
+				int y = pos.getY();
+				int z = pos.getZ();
+				ItemStack itemstack = entity.getHeldItem(hand);
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 					$_dependencies.put("entity", entity);

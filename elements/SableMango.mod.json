@@ -19,7 +19,7 @@
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [],
-    "onRightClickedInAir": {
+    "onRightClickedOnBlock": {
       "name": "SableMangoRightClickedOnBlock"
     }
   }

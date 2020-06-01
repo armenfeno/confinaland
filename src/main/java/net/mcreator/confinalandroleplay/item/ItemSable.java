@@ -9,7 +9,10 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemStack;
@@ -26,6 +29,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableToolInHandTicks;
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableRightClickedInAir;
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableMobIsHitWithTool;
+import net.mcreator.confinalandroleplay.procedure.ProcedureApagarsableOnKeyPressed;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.Set;
@@ -71,12 +75,31 @@ public class ItemSable extends ElementsConfinalandRoleplay.ModElement {
 				int z = (int) entity.posZ;
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-					$_dependencies.put("entity", entity);
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
 					ProcedureSableRightClickedInAir.executeProcedure($_dependencies);
+				}
+				return retval;
+			}
+
+			@Override
+			public EnumActionResult onItemUse(EntityPlayer entity, World world, BlockPos pos, EnumHand hand, EnumFacing direction, float hitX,
+					float hitY, float hitZ) {
+				EnumActionResult retval = super.onItemUse(entity, world, pos, hand, direction, hitX, hitY, hitZ);
+				int x = pos.getX();
+				int y = pos.getY();
+				int z = pos.getZ();
+				ItemStack itemstack = entity.getHeldItem(hand);
+				{
+					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					ProcedureApagarsableOnKeyPressed.executeProcedure($_dependencies);
 				}
 				return retval;
 			}

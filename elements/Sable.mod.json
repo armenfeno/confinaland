@@ -22,6 +22,9 @@
     "onRightClickedInAir": {
       "name": "SableRightClickedInAir"
     },
+    "onRightClickedOnBlock": {
+      "name": "ApagarsableOnKeyPressed"
+    },
     "onEntityHitWith": {
       "name": "SableMobIsHitWithTool"
     },
