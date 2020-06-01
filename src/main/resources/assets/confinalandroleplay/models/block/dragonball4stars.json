@@ -1,0 +1,8 @@
+{
+  "parent": "confinalandroleplay:custom/dragonball4stars",
+  "textures": {
+    "all": "confinalandroleplay:blocks/ragonall4",
+    "particle": "confinalandroleplay:blocks/ragonall4",
+    "0": "confinalandroleplay:blocks/ragonall4"
+  }
+}

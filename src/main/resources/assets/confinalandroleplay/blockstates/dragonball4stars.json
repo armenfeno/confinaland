@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "confinalandroleplay:dragonball4stars"
+    },
+    "facing=north": {
+      "model": "confinalandroleplay:dragonball4stars"
+    },
+    "facing=east": {
+      "model": "confinalandroleplay:dragonball4stars",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "confinalandroleplay:dragonball4stars",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "confinalandroleplay:dragonball4stars",
+      "y": 270
+    }
+  }
+}

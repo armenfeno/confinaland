@@ -2,9 +2,9 @@
   "_fv": 6,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "bastomagic",
-    "customModelName": "Normal",
+    "customModelName": "dbpowerpole_3d:default",
     "name": "Basto Magic",
     "creativeTab": {
       "value": "COMBAT"

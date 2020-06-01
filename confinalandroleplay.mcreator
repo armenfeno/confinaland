@@ -922,6 +922,42 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "DragonBall4starsOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DragonBall4stars",
+      "type": "block",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -1070,8 +1106,8 @@
   "language_map": {
     "en_us": {
       "tile.borderblock.name": "Border Block",
-      "item.sable.name": "Sable",
       "item.sarumanstaff.name": "Saruman Staff",
+      "item.sable.name": "Sable",
       "item.antygravityhelmethelmet.name": "Anty Gravity Helmet Helmet",
       "item.record.tavernlow.desc": "Música ambiental para la Taverna de Confinaland",
       "item.dragonballscouterboots.name": "Dragon Ball Scouter Boots",
@@ -1091,6 +1127,7 @@
       "item.sunglasses01legs.name": "Sun Glasses01 Leggings",
       "item.antygravityhelmetboots.name": "Anty Gravity Helmet Boots",
       "item.sunglasses01boots.name": "Sun Glasses01 Boots",
+      "tile.dragonball4stars.name": "Bola de Drac 4 estrelles",
       "item.myersknife.name": "Myers Knife",
       "item.dragonballscouterlegs.name": "Dragon Ball Scouter Leggings",
       "item.sunglassesbody.name": "Sunglasses Body",
