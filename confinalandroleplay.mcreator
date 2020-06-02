@@ -802,38 +802,6 @@
       }
     },
     {
-      "name": "SableOffHand",
-      "type": "procedure",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "int"
-          },
-          {
-            "name": "y",
-            "type": "int"
-          },
-          {
-            "name": "z",
-            "type": "int"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "SableMango",
       "type": "tool",
       "sortid": 58,
@@ -985,9 +953,9 @@
       "ids": {}
     },
     {
-      "name": "ApagarsableOnKeyPressed",
+      "name": "ApagarSable",
       "type": "procedure",
-      "sortid": 64,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1015,14 +983,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Apagarsable",
-      "type": "keybind",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -1171,12 +1131,11 @@
   "language_map": {
     "en_us": {
       "tile.borderblock.name": "Border Block",
-      "item.sable.name": "Sable laser",
       "item.sarumanstaff.name": "Saruman Staff",
+      "item.sable.name": "Green Sable Laser",
       "item.antygravityhelmethelmet.name": "Anty Gravity Helmet Helmet",
       "item.record.tavernlow.desc": "Música ambiental para la Taverna de Confinaland",
       "item.dragonballscouterboots.name": "Dragon Ball Scouter Boots",
-      "key.mcreator.apagarsable": "Apagarsable",
       "item.confinalandkey.name": "Confinaland Key",
       "item.sunglasseshelmet.name": "Sun glasses",
       "item.sunglasses01body.name": "Sun Glasses01 Body",
@@ -1207,7 +1166,7 @@
       "item.confinacoinsilver.name": "Silver Confinacoin",
       "item.tavernlow.name": "Tavern Low",
       "item.mendingmaker.name": "Empty Mending Book",
-      "item.sablemango.name": "Sable_laser",
+      "item.sablemango.name": "Green Sable Laser",
       "item.sunglasseslegs.name": "Sunglasses Leggings",
       "item.bastomagic.name": "Basto Magic"
     }

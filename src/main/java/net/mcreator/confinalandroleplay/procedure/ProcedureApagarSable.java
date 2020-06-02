@@ -14,30 +14,30 @@ import net.mcreator.confinalandroleplay.item.ItemSable;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
-public class ProcedureApagarsableOnKeyPressed extends ElementsConfinalandRoleplay.ModElement {
-	public ProcedureApagarsableOnKeyPressed(ElementsConfinalandRoleplay instance) {
-		super(instance, 64);
+public class ProcedureApagarSable extends ElementsConfinalandRoleplay.ModElement {
+	public ProcedureApagarSable(ElementsConfinalandRoleplay instance) {
+		super(instance, 68);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure ApagarsableOnKeyPressed!");
+			System.err.println("Failed to load dependency entity for procedure ApagarSable!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure ApagarsableOnKeyPressed!");
+			System.err.println("Failed to load dependency x for procedure ApagarSable!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure ApagarsableOnKeyPressed!");
+			System.err.println("Failed to load dependency y for procedure ApagarSable!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure ApagarsableOnKeyPressed!");
+			System.err.println("Failed to load dependency z for procedure ApagarSable!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure ApagarsableOnKeyPressed!");
+			System.err.println("Failed to load dependency world for procedure ApagarSable!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

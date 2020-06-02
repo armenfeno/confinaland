@@ -29,7 +29,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableToolInHandTicks;
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableRightClickedInAir;
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableMobIsHitWithTool;
-import net.mcreator.confinalandroleplay.procedure.ProcedureApagarsableOnKeyPressed;
+import net.mcreator.confinalandroleplay.procedure.ProcedureApagarSable;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.Set;
@@ -99,7 +99,7 @@ public class ItemSable extends ElementsConfinalandRoleplay.ModElement {
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
-					ProcedureApagarsableOnKeyPressed.executeProcedure($_dependencies);
+					ProcedureApagarSable.executeProcedure($_dependencies);
 				}
 				return retval;
 			}
