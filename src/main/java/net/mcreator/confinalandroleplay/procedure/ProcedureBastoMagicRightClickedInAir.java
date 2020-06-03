@@ -55,7 +55,7 @@ public class ProcedureBastoMagicRightClickedInAir extends ElementsConfinalandRol
 			if (((itemstack.getItemDamage()) != 9)) {
 				if ((((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).getFoodStats().getFoodLevel() : 0) >= 0)) {
 					world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-							.getObject(new ResourceLocation("confinalandroleplay:canvidelloc")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+							.getObject(new ResourceLocation("confinalandroleplay:canvidelloc")), SoundCategory.NEUTRAL, (float) 3, (float) 1);
 					entity.setPositionAndUpdate(
 							(entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
 									entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 500, entity.getLook(1f).y * 500,
@@ -70,14 +70,16 @@ public class ProcedureBastoMagicRightClickedInAir extends ElementsConfinalandRol
 					world.playSound((EntityPlayer) null, (entity.posX), (entity.posY), (entity.posZ),
 							(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
 									.getObject(new ResourceLocation("confinalandroleplay:canvidelloc")),
-							SoundCategory.NEUTRAL, (float) 1, (float) 1);
+							SoundCategory.NEUTRAL, (float) 3, (float) 1);
 					if (entity instanceof EntityPlayer)
 						((EntityPlayer) entity).addExperienceLevel(-((int) 1));
 					if (entity instanceof EntityPlayer)
 						((EntityPlayer) entity).getFoodStats().setFoodLevel(
 								(int) (((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).getFoodStats().getFoodLevel() : 0) - 5));
-					world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-							.getObject(new ResourceLocation("confinalandroleplay:kaioken")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					world.playSound((EntityPlayer) null, (entity.posX), (entity.posY), (entity.posZ),
+							(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
+									.getObject(new ResourceLocation("confinalandroleplay:kaioken")),
+							SoundCategory.NEUTRAL, (float) 5, (float) 1);
 					if (entity instanceof EntityLivingBase)
 						((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.STRENGTH, (int) 450, (int) 3));
 					if (entity instanceof EntityPlayer)
