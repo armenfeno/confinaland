@@ -3,8 +3,11 @@ package net.mcreator.confinalandroleplay.procedure;
 import net.minecraft.world.World;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.item.ItemStack;
+import net.minecraft.init.MobEffects;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
@@ -14,7 +17,7 @@ import java.util.Random;
 @ElementsConfinalandRoleplay.ModElement.Tag
 public class ProcedureBastoMagicRightClickedInAir extends ElementsConfinalandRoleplay.ModElement {
 	public ProcedureBastoMagicRightClickedInAir(ElementsConfinalandRoleplay instance) {
-		super(instance, 61);
+		super(instance, 72);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -73,6 +76,10 @@ public class ProcedureBastoMagicRightClickedInAir extends ElementsConfinalandRol
 					if (entity instanceof EntityPlayer)
 						((EntityPlayer) entity).getFoodStats().setFoodLevel(
 								(int) (((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).getFoodStats().getFoodLevel() : 0) - 5));
+					world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
+							.getObject(new ResourceLocation("confinalandroleplay:kaioken")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+					if (entity instanceof EntityLivingBase)
+						((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.STRENGTH, (int) 450, (int) 3));
 					if (entity instanceof EntityPlayer)
 						((EntityPlayer) entity).getCooldownTracker().setCooldown(itemstack.getItem(), (int) 1000);
 					if (itemstack.attemptDamageItem((int) 1, new Random(), null)) {

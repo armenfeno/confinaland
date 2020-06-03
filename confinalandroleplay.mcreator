@@ -853,42 +853,6 @@
       }
     },
     {
-      "name": "BastoMagicRightClickedInAir",
-      "type": "procedure",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "int"
-          },
-          {
-            "name": "y",
-            "type": "int"
-          },
-          {
-            "name": "z",
-            "type": "int"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "DragonBallScouterItemInHandTick",
       "type": "procedure",
       "sortid": 62,
@@ -976,6 +940,110 @@
           {
             "name": "z",
             "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BastoMagicMobIsHitWithItem",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KaiokenOnKeyPressed",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kaioken",
+      "type": "keybind",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BastoMagicRightClickedInAir",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "world",
@@ -1156,6 +1224,7 @@
       "item.antygravityhelmethelmet.name": "Anty Gravity Helmet Helmet",
       "item.record.tavernlow.desc": "Música ambiental para la Taverna de Confinaland",
       "item.dragonballscouterboots.name": "Dragon Ball Scouter Boots",
+      "key.mcreator.kaioken": "Kaioken",
       "key.mcreator.apagarsable": "Apagarsable",
       "item.confinalandkey.name": "Confinaland Key",
       "item.sunglasseshelmet.name": "Sun glasses",

@@ -25,6 +25,7 @@ import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureDragonBallScouterItemInHandTick;
 import net.mcreator.confinalandroleplay.procedure.ProcedureBastoMagicRightClickedInAir;
+import net.mcreator.confinalandroleplay.procedure.ProcedureBastoMagicMobIsHitWithItem;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.List;
@@ -108,6 +109,24 @@ public class ItemBastoMagic extends ElementsConfinalandRoleplay.ModElement {
 				ProcedureBastoMagicRightClickedInAir.executeProcedure($_dependencies);
 			}
 			return ar;
+		}
+
+		@Override
+		public boolean hitEntity(ItemStack itemstack, EntityLivingBase entity, EntityLivingBase entity2) {
+			super.hitEntity(itemstack, entity, entity2);
+			int x = (int) entity.posX;
+			int y = (int) entity.posY;
+			int z = (int) entity.posZ;
+			World world = entity.world;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureBastoMagicMobIsHitWithItem.executeProcedure($_dependencies);
+			}
+			return true;
 		}
 
 		@Override

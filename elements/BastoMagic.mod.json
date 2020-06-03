@@ -25,6 +25,9 @@
     "onRightClickedInAir": {
       "name": "BastoMagicRightClickedInAir"
     },
+    "onEntityHitWith": {
+      "name": "BastoMagicMobIsHitWithItem"
+    },
     "onItemInUseTick": {
       "name": "DragonBallScouterItemInHandTick"
     }
