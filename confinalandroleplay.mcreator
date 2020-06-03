@@ -1148,11 +1148,6 @@
       "category": "master"
     },
     {
-      "name": "canvidelloc",
-      "file": "canvidelloc",
-      "category": "player"
-    },
-    {
       "name": "cellstep",
       "file": "cellstep",
       "category": "player"
@@ -1166,13 +1161,38 @@
       "name": "dragonballsound",
       "file": "dragonballsound",
       "category": "player"
+    },
+    {
+      "name": "canvidelloc",
+      "file": "canvidelloc",
+      "category": "player"
+    },
+    {
+      "name": "dbpunch1",
+      "file": "dbpunch1",
+      "category": "player"
+    },
+    {
+      "name": "dbpunch2",
+      "file": "dbpunch2",
+      "category": "player"
+    },
+    {
+      "name": "dbpunch3",
+      "file": "dbpunch3",
+      "category": "player"
+    },
+    {
+      "name": "kaioken",
+      "file": "kaioken",
+      "category": "player"
     }
   ],
   "language_map": {
     "en_us": {
       "tile.borderblock.name": "Border Block",
-      "item.sable.name": "Sable laser",
       "item.sarumanstaff.name": "Saruman Staff",
+      "item.sable.name": "Sable laser",
       "item.antygravityhelmethelmet.name": "Anty Gravity Helmet Helmet",
       "item.record.tavernlow.desc": "Música ambiental para la Taverna de Confinaland",
       "item.dragonballscouterboots.name": "Dragon Ball Scouter Boots",

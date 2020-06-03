@@ -215,15 +215,6 @@
       }
     ]
   },
-  "canvidelloc": {
-    "category": "player",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:canvidelloc",
-        "stream": false
-      }
-    ]
-  },
   "cellstep": {
     "category": "player",
     "sounds": [
@@ -247,6 +238,51 @@
     "sounds": [
       {
         "name": "confinalandroleplay:dragonballsound",
+        "stream": false
+      }
+    ]
+  },
+  "canvidelloc": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:canvidelloc",
+        "stream": false
+      }
+    ]
+  },
+  "dbpunch1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:dbpunch1",
+        "stream": false
+      }
+    ]
+  },
+  "dbpunch2": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:dbpunch2",
+        "stream": false
+      }
+    ]
+  },
+  "dbpunch3": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:dbpunch3",
+        "stream": false
+      }
+    ]
+  },
+  "kaioken": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:kaioken",
         "stream": false
       }
     ]
