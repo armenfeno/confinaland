@@ -5,7 +5,7 @@
     "renderType": 1,
     "texture": "sablelaser",
     "customModelName": "sablelaser3d:default",
-    "name": "Sable laser",
+    "name": "Green Sable Laser",
     "creativeTab": {
       "value": "COMBAT"
     },
@@ -23,7 +23,7 @@
       "name": "SableRightClickedInAir"
     },
     "onRightClickedOnBlock": {
-      "name": "ApagarsableOnKeyPressed"
+      "name": "ApagarSable"
     },
     "onEntityHitWith": {
       "name": "SableMobIsHitWithTool"

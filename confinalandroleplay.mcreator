@@ -802,38 +802,6 @@
       }
     },
     {
-      "name": "SableOffHand",
-      "type": "procedure",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "int"
-          },
-          {
-            "name": "y",
-            "type": "int"
-          },
-          {
-            "name": "z",
-            "type": "int"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "SableMango",
       "type": "tool",
       "sortid": 58,
@@ -985,9 +953,9 @@
       "ids": {}
     },
     {
-      "name": "ApagarsableOnKeyPressed",
+      "name": "ApagarSable",
       "type": "procedure",
-      "sortid": 64,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1015,14 +983,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Apagarsable",
-      "type": "keybind",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -1148,6 +1108,11 @@
       "category": "master"
     },
     {
+      "name": "canvidelloc",
+      "file": "canvidelloc",
+      "category": "player"
+    },
+    {
       "name": "cellstep",
       "file": "cellstep",
       "category": "player"
@@ -1163,18 +1128,8 @@
       "category": "player"
     },
     {
-      "name": "canvidelloc",
-      "file": "canvidelloc",
-      "category": "player"
-    },
-    {
-      "name": "dbpunch1",
-      "file": "dbpunch1",
-      "category": "player"
-    },
-    {
-      "name": "dbpunch2",
-      "file": "dbpunch2",
+      "name": "kaioken",
+      "file": "kaioken",
       "category": "player"
     },
     {
@@ -1183,8 +1138,13 @@
       "category": "player"
     },
     {
-      "name": "kaioken",
-      "file": "kaioken",
+      "name": "dbpunch2",
+      "file": "dbpunch2",
+      "category": "player"
+    },
+    {
+      "name": "dbpunch1",
+      "file": "dbpunch1",
       "category": "player"
     }
   ],

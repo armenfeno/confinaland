@@ -215,6 +215,15 @@
       }
     ]
   },
+  "canvidelloc": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:canvidelloc",
+        "stream": false
+      }
+    ]
+  },
   "cellstep": {
     "category": "player",
     "sounds": [
@@ -242,29 +251,11 @@
       }
     ]
   },
-  "canvidelloc": {
+  "kaioken": {
     "category": "player",
     "sounds": [
       {
-        "name": "confinalandroleplay:canvidelloc",
-        "stream": false
-      }
-    ]
-  },
-  "dbpunch1": {
-    "category": "player",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:dbpunch1",
-        "stream": false
-      }
-    ]
-  },
-  "dbpunch2": {
-    "category": "player",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:dbpunch2",
+        "name": "confinalandroleplay:kaioken",
         "stream": false
       }
     ]
@@ -278,11 +269,20 @@
       }
     ]
   },
-  "kaioken": {
+  "dbpunch2": {
     "category": "player",
     "sounds": [
       {
-        "name": "confinalandroleplay:kaioken",
+        "name": "confinalandroleplay:dbpunch2",
+        "stream": false
+      }
+    ]
+  },
+  "dbpunch1": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:dbpunch1",
         "stream": false
       }
     ]
