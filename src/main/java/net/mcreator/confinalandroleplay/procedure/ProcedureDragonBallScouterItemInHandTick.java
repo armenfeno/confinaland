@@ -20,6 +20,6 @@ public class ProcedureDragonBallScouterItemInHandTick extends ElementsConfinalan
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, (int) 1, (int) 100));
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, (int) 1, (int) 10));
 	}
 }
