@@ -53,7 +53,7 @@ public class ProcedureBastoMagicRightClickedInAir extends ElementsConfinalandRol
 		World world = (World) dependencies.get("world");
 		if ((((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).experienceLevel : 0) >= 1)) {
 			if (((itemstack.getItemDamage()) != 9)) {
-				if ((((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).getFoodStats().getFoodLevel() : 0) >= 0)) {
+				if ((((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).getFoodStats().getFoodLevel() : 0) >= 1)) {
 					world.playSound((EntityPlayer) null, x, y, z, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
 							.getObject(new ResourceLocation("confinalandroleplay:canvidelloc")), SoundCategory.NEUTRAL, (float) 3, (float) 1);
 					entity.setPositionAndUpdate(

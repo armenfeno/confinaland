@@ -6,6 +6,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.Entity;
@@ -36,6 +37,10 @@ public class ProcedureSarumanStaffRightClickedInAir extends ElementsConfinalandR
 			System.err.println("Failed to load dependency z for procedure SarumanStaffRightClickedInAir!");
 			return;
 		}
+		if (dependencies.get("itemstack") == null) {
+			System.err.println("Failed to load dependency itemstack for procedure SarumanStaffRightClickedInAir!");
+			return;
+		}
 		if (dependencies.get("world") == null) {
 			System.err.println("Failed to load dependency world for procedure SarumanStaffRightClickedInAir!");
 			return;
@@ -44,6 +49,7 @@ public class ProcedureSarumanStaffRightClickedInAir extends ElementsConfinalandR
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
+		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		World world = (World) dependencies.get("world");
 		double espera = 0;
 		if ((!(world.isThundering()))) {
@@ -88,21 +94,28 @@ public class ProcedureSarumanStaffRightClickedInAir extends ElementsConfinalandR
 				}, "weather thunder");
 			}
 		} else {
-			world.addWeatherEffect(
-					new EntityLightningBolt(world,
-							(int) (entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-									entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 100, entity.getLook(1f).y * 100,
-											entity.getLook(1f).z * 100),
-									false, false, true).getBlockPos().getX()),
-							(int) (entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
-									entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 100, entity.getLook(1f).y * 100,
-											entity.getLook(1f).z * 100),
-									false, false, true).getBlockPos().getY()),
-							(int) (entity.world
-									.rayTraceBlocks(entity.getPositionEyes(1f), entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 100,
-											entity.getLook(1f).y * 100, entity.getLook(1f).z * 100), false, false, true)
-									.getBlockPos().getZ()),
-							false));
+			if ((((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).getFoodStats().getFoodLevel() : 0) >= 1)) {
+				world.addWeatherEffect(new EntityLightningBolt(world,
+						(int) (entity.world.rayTraceBlocks(entity.getPositionEyes(1f),
+								entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 100, entity.getLook(1f).y * 100,
+										entity.getLook(1f).z * 100),
+								false, false, true).getBlockPos().getX()),
+						(int) (entity.world
+								.rayTraceBlocks(entity.getPositionEyes(1f),
+										entity.getPositionEyes(1f).addVector(entity.getLook(1f).x * 100, entity.getLook(1f).y * 100,
+												entity.getLook(1f).z * 100),
+										false, false, true)
+								.getBlockPos().getY()),
+						(int) (entity.world.rayTraceBlocks(entity.getPositionEyes(1f), entity.getPositionEyes(1f)
+								.addVector(entity.getLook(1f).x * 100, entity.getLook(1f).y * 100, entity.getLook(1f).z * 100), false, false, true)
+								.getBlockPos().getZ()),
+						false));
+				if (entity instanceof EntityPlayer)
+					((EntityPlayer) entity).getFoodStats()
+							.setFoodLevel((int) (((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).getFoodStats().getFoodLevel() : 0) - 5));
+				if (entity instanceof EntityPlayer)
+					((EntityPlayer) entity).getCooldownTracker().setCooldown(itemstack.getItem(), (int) 100);
+			}
 		}
 	}
 }
