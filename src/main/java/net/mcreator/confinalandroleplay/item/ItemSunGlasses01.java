@@ -36,7 +36,7 @@ public class ItemSunGlasses01 extends ElementsConfinalandRoleplay.ModElement {
 
 	@Override
 	public void initElements() {
-		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("SUNGLASSES01", "confinalandroleplay:sun_glasses_", 0, new int[]{0, 0, 0, 1}, 9,
+		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("SUNGLASSES01", "confinalandroleplay:sun_glasses__", 0, new int[]{0, 0, 0, 1}, 9,
 				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("block.cloth.place")), 0f);
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.HEAD) {
 			@Override
