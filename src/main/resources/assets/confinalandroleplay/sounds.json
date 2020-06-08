@@ -286,5 +286,14 @@
         "stream": false
       }
     ]
+  },
+  "jurassicpark": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:elcomeourassic_ark",
+        "stream": false
+      }
+    ]
   }
 }

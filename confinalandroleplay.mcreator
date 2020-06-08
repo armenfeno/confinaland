@@ -1178,6 +1178,11 @@
       "name": "dbpunch1",
       "file": "dbpunch1",
       "category": "player"
+    },
+    {
+      "name": "jurassicpark",
+      "file": "elcomeourassic_ark",
+      "category": "master"
     }
   ],
   "language_map": {
