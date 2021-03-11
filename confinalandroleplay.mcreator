@@ -1015,6 +1015,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "DNI",
+      "type": "item",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -1210,7 +1218,7 @@
       "item.sunglasses01legs.name": "Sun Glasses01 Leggings",
       "item.antygravityhelmetboots.name": "Anty Gravity Helmet Boots",
       "item.sunglasses01boots.name": "Sun Glasses01 Boots",
-      "item.dni.name": "Confinaland DNI",
+      "item.dni.name": "DNI",
       "tile.dragonball4stars.name": "Bola de Drac 4 estrelles",
       "item.myersknife.name": "Myers Knife",
       "item.dragonballscouterlegs.name": "Dragon Ball Scouter Leggings",
