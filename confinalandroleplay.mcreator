@@ -1015,6 +1015,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "DNI",
+      "type": "item",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -1188,7 +1196,7 @@
   "language_map": {
     "en_us": {
       "tile.borderblock.name": "Border Block",
-      "item.sable.name": "Sable laser",
+      "item.sable.name": "Green Sable Laser",
       "item.sarumanstaff.name": "Saruman Staff",
       "item.antygravityhelmethelmet.name": "Anty Gravity Helmet Helmet",
       "item.record.tavernlow.desc": "Música ambiental para la Taverna de Confinaland",
@@ -1210,6 +1218,7 @@
       "item.sunglasses01legs.name": "Sun Glasses01 Leggings",
       "item.antygravityhelmetboots.name": "Anty Gravity Helmet Boots",
       "item.sunglasses01boots.name": "Sun Glasses01 Boots",
+      "item.dni.name": "Confinaland DNI",
       "tile.dragonball4stars.name": "Bola de Drac 4 estrelles",
       "item.myersknife.name": "Myers Knife",
       "item.dragonballscouterlegs.name": "Dragon Ball Scouter Leggings",
@@ -1224,7 +1233,7 @@
       "item.confinacoinsilver.name": "Silver Confinacoin",
       "item.tavernlow.name": "Tavern Low",
       "item.mendingmaker.name": "Empty Mending Book",
-      "item.sablemango.name": "Sable_laser",
+      "item.sablemango.name": "Green Sable Laser",
       "item.sunglasseslegs.name": "Sunglasses Leggings",
       "item.bastomagic.name": "Basto Magic"
     }
