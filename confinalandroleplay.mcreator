@@ -1191,6 +1191,16 @@
       "name": "jurassicpark",
       "file": "elcomeourassic_ark",
       "category": "master"
+    },
+    {
+      "name": "discoteca_exterior",
+      "file": "discoteca_exterior",
+      "category": "master"
+    },
+    {
+      "name": "discoteca_interior",
+      "file": "discoteca_interior",
+      "category": "master"
     }
   ],
   "language_map": {
