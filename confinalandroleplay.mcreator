@@ -1193,21 +1193,21 @@
       "category": "master"
     },
     {
-      "name": "discoteca_exterior",
-      "file": "discoteca_exterior",
-      "category": "master"
-    },
-    {
       "name": "discoteca_interior",
       "file": "discoteca_interior",
-      "category": "master"
+      "category": "music"
+    },
+    {
+      "name": "discoteca_exterior",
+      "file": "discoteca_exterior",
+      "category": "music"
     }
   ],
   "language_map": {
     "en_us": {
       "tile.borderblock.name": "Border Block",
-      "item.sable.name": "Green Sable Laser",
       "item.sarumanstaff.name": "Saruman Staff",
+      "item.sable.name": "Green Sable Laser",
       "item.antygravityhelmethelmet.name": "Anty Gravity Helmet Helmet",
       "item.record.tavernlow.desc": "Música ambiental para la Taverna de Confinaland",
       "item.dragonballscouterboots.name": "Dragon Ball Scouter Boots",

@@ -296,21 +296,21 @@
       }
     ]
   },
-  "discoteca_exterior": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:discoteca_exterior",
-        "stream": false
-      }
-    ]
-  },
   "discoteca_interior": {
-    "category": "master",
+    "category": "music",
     "sounds": [
       {
         "name": "confinalandroleplay:discoteca_interior",
-        "stream": false
+        "stream": true
+      }
+    ]
+  },
+  "discoteca_exterior": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:discoteca_exterior",
+        "stream": true
       }
     ]
   }
