@@ -20,7 +20,6 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.properties.PropertyDirection;
@@ -31,6 +30,7 @@ import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.Block;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureDragonBall4starsOnBlockRightClicked;
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -63,7 +63,7 @@ public class BlockDragonBall4stars extends ElementsConfinalandRoleplay.ModElemen
 			setResistance(10F);
 			setLightLevel(1F);
 			setLightOpacity(0);
-			setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+			setCreativeTab(TabConfinalandPolice.tab);
 			this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 		}
 

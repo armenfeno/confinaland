@@ -9,10 +9,10 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -39,7 +39,7 @@ public class ItemConfinacoinSilver extends ElementsConfinalandRoleplay.ModElemen
 			maxStackSize = 64;
 			setUnlocalizedName("confinacoinsilver");
 			setRegistryName("confinacoinsilver");
-			setCreativeTab(CreativeTabs.MISC);
+			setCreativeTab(TabConfinalandPolice.tab);
 		}
 
 		@Override

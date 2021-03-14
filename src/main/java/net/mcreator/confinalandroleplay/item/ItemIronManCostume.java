@@ -12,9 +12,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -28,21 +28,21 @@ public class ItemIronManCostume extends ElementsConfinalandRoleplay.ModElement {
 	@GameRegistry.ObjectHolder("confinalandroleplay:ironmancostumeboots")
 	public static final Item boots = null;
 	public ItemIronManCostume(ElementsConfinalandRoleplay instance) {
-		super(instance, 80);
+		super(instance, 90);
 	}
 
 	@Override
 	public void initElements() {
-		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("IRONMANCOSTUME", "confinalandroleplay:ironman_", 25, new int[]{2, 5, 6, 2}, 9,
-				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("")), 0f);
+		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("IRONMANCOSTUME", "confinalandroleplay:ironman_", 0, new int[]{0, 0, 0, 0}, 9,
+				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("item.armor.equip_iron")), 0f);
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.HEAD).setUnlocalizedName("ironmancostumehelmet")
-				.setRegistryName("ironmancostumehelmet").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("ironmancostumehelmet").setCreativeTab(TabConfinalandPolice.tab));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.CHEST).setUnlocalizedName("ironmancostumebody")
-				.setRegistryName("ironmancostumebody").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("ironmancostumebody").setCreativeTab(TabConfinalandPolice.tab));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.LEGS).setUnlocalizedName("ironmancostumelegs")
-				.setRegistryName("ironmancostumelegs").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("ironmancostumelegs").setCreativeTab(TabConfinalandPolice.tab));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.FEET).setUnlocalizedName("ironmancostumeboots")
-				.setRegistryName("ironmancostumeboots").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("ironmancostumeboots").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

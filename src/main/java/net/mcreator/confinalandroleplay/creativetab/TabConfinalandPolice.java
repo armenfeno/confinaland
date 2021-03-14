@@ -7,7 +7,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraft.item.ItemStack;
 import net.minecraft.creativetab.CreativeTabs;
 
-import net.mcreator.confinalandroleplay.item.ItemPoliceMegaphone;
+import net.mcreator.confinalandroleplay.item.ItemConfinacoin;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -22,7 +22,7 @@ public class TabConfinalandPolice extends ElementsConfinalandRoleplay.ModElement
 			@SideOnly(Side.CLIENT)
 			@Override
 			public ItemStack getTabIconItem() {
-				return new ItemStack(ItemPoliceMegaphone.block, (int) (1));
+				return new ItemStack(ItemConfinacoin.block, (int) (1));
 			}
 
 			@SideOnly(Side.CLIENT)

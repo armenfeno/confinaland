@@ -20,10 +20,10 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableMangoRightClickedOnBlock;
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.Set;
@@ -79,7 +79,7 @@ public class ItemSableMango extends ElementsConfinalandRoleplay.ModElement {
 				}
 				return retval;
 			}
-		}.setUnlocalizedName("sablemango").setRegistryName("sablemango").setCreativeTab(CreativeTabs.COMBAT));
+		}.setUnlocalizedName("sablemango").setRegistryName("sablemango").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

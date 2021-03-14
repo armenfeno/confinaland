@@ -3,21 +3,21 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "model_head",
-    "enableBody": true,
-    "textureBody": "model_body",
-    "enableLeggings": true,
-    "textureLeggings": "model_leggings",
-    "enableBoots": true,
-    "textureBoots": "model_boots",
+    "textureHelmet": "picilime_miniature",
+    "enableBody": false,
+    "textureBody": "",
+    "enableLeggings": false,
+    "textureLeggings": "",
+    "enableBoots": false,
+    "textureBoots": "",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:ConfinalandPolice"
     },
-    "armorTextureFile": "myers_",
-    "helmetName": "Myers Costume Helmet",
-    "bodyName": "Myers Costume Body",
-    "leggingsName": "Myers Costume Leggings",
-    "bootsName": "Myers Costume Boots",
+    "armorTextureFile": "picilime_mask_",
+    "helmetName": "Máscara de EpicNilTime",
+    "bodyName": "Epic Nil Time Mask Body",
+    "leggingsName": "Epic Nil Time Mask Leggings",
+    "bootsName": "Epic Nil Time Mask Boots",
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",
     "helmetModelTexture": "From armor",
@@ -32,15 +32,15 @@
     "bootsModelPartL": "Boots L",
     "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
-    "maxDamage": 25,
-    "damageValueHelmet": 2,
-    "damageValueBody": 6,
-    "damageValueLeggings": 5,
-    "damageValueBoots": 2,
+    "maxDamage": 0,
+    "damageValueHelmet": 0,
+    "damageValueBody": 0,
+    "damageValueLeggings": 0,
+    "damageValueBoots": 0,
     "enchantability": 9,
     "toughness": 0.0,
     "equipSound": {
-      "value": ""
+      "value": "item.armor.equip_leather"
     },
     "repairItems": []
   }

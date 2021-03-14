@@ -7,7 +7,7 @@
     "customModelName": "sarumanstaff3d:default",
     "name": "Saruman Staff",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:ConfinalandPolice"
     },
     "toolType": "Special",
     "harvestLevel": 1,

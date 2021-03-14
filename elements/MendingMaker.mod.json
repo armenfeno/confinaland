@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Empty Mending Book",
     "creativeTab": {
-      "value": "BREWING"
+      "value": "CUSTOM:ConfinalandPolice"
     },
     "stackSize": 16,
     "enchantability": 0,

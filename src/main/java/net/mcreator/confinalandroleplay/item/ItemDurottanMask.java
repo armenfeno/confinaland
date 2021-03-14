@@ -12,9 +12,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -28,15 +28,16 @@ public class ItemDurottanMask extends ElementsConfinalandRoleplay.ModElement {
 	@GameRegistry.ObjectHolder("confinalandroleplay:durottanmaskboots")
 	public static final Item boots = null;
 	public ItemDurottanMask(ElementsConfinalandRoleplay instance) {
-		super(instance, 76);
+		super(instance, 85);
 	}
 
 	@Override
 	public void initElements() {
-		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("DUROTTANMASK", "confinalandroleplay:durottan_mask_", 25, new int[]{2, 5, 6, 2},
-				9, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("")), 0f);
+		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("DUROTTANMASK", "confinalandroleplay:durottan_mask_", 0, new int[]{0, 0, 0, 0}, 9,
+				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("item.armor.equip_leather")),
+				0f);
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.HEAD).setUnlocalizedName("durottanmaskhelmet")
-				.setRegistryName("durottanmaskhelmet").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("durottanmaskhelmet").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

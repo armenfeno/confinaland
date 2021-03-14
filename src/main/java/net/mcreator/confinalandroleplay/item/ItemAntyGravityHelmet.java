@@ -18,6 +18,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureAntyGravityHelmetHelmetTickEvent;
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -52,7 +53,7 @@ public class ItemAntyGravityHelmet extends ElementsConfinalandRoleplay.ModElemen
 					ProcedureAntyGravityHelmetHelmetTickEvent.executeProcedure($_dependencies);
 				}
 			}
-		}.setUnlocalizedName("antygravityhelmethelmet").setRegistryName("antygravityhelmethelmet").setCreativeTab(null));
+		}.setUnlocalizedName("antygravityhelmethelmet").setRegistryName("antygravityhelmethelmet").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

@@ -18,6 +18,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureSunGlasses01HelmetTickEvent;
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -51,7 +52,7 @@ public class ItemSunGlasses01 extends ElementsConfinalandRoleplay.ModElement {
 					ProcedureSunGlasses01HelmetTickEvent.executeProcedure($_dependencies);
 				}
 			}
-		}.setUnlocalizedName("sunglasses01helmet").setRegistryName("sunglasses01helmet").setCreativeTab(null));
+		}.setUnlocalizedName("sunglasses01helmet").setRegistryName("sunglasses01helmet").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

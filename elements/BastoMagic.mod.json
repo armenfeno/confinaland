@@ -7,7 +7,7 @@
     "customModelName": "dbpowerpole_3d:default",
     "name": "Basto Magic",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:ConfinalandPolice"
     },
     "stackSize": 64,
     "enchantability": 0,

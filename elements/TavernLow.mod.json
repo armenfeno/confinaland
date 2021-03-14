@@ -6,7 +6,7 @@
     "name": "Tavern Low",
     "description": "Música ambiental para la Taverna de Confinaland",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:ConfinalandPolice"
     },
     "music": {
       "value": "CUSTOM:musictavernlow"

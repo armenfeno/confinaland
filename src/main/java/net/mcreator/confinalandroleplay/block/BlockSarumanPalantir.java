@@ -35,6 +35,7 @@ import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.Block;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureSarumanPalantirOnBlockRightClicked;
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.Random;
@@ -71,7 +72,7 @@ public class BlockSarumanPalantir extends ElementsConfinalandRoleplay.ModElement
 			setResistance(13F);
 			setLightLevel(0.4F);
 			setLightOpacity(0);
-			setCreativeTab(null);
+			setCreativeTab(TabConfinalandPolice.tab);
 			this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 		}
 

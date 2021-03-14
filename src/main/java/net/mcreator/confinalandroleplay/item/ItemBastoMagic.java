@@ -18,7 +18,6 @@ import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
@@ -26,6 +25,7 @@ import net.minecraft.block.state.IBlockState;
 import net.mcreator.confinalandroleplay.procedure.ProcedureDragonBallScouterItemInHandTick;
 import net.mcreator.confinalandroleplay.procedure.ProcedureBastoMagicRightClickedInAir;
 import net.mcreator.confinalandroleplay.procedure.ProcedureBastoMagicMobIsHitWithItem;
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.List;
@@ -56,7 +56,7 @@ public class ItemBastoMagic extends ElementsConfinalandRoleplay.ModElement {
 			maxStackSize = 64;
 			setUnlocalizedName("bastomagic");
 			setRegistryName("bastomagic");
-			setCreativeTab(CreativeTabs.COMBAT);
+			setCreativeTab(TabConfinalandPolice.tab);
 		}
 
 		@Override

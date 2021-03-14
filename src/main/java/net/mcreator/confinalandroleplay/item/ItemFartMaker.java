@@ -17,6 +17,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureFartMakerRightClickedInAir;
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -43,7 +44,7 @@ public class ItemFartMaker extends ElementsConfinalandRoleplay.ModElement {
 			maxStackSize = 64;
 			setUnlocalizedName("fartmaker");
 			setRegistryName("fartmaker");
-			setCreativeTab(null);
+			setCreativeTab(TabConfinalandPolice.tab);
 		}
 
 		@Override

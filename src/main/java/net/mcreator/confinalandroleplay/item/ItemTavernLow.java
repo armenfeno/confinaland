@@ -10,9 +10,9 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemRecord;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -38,7 +38,7 @@ public class ItemTavernLow extends ElementsConfinalandRoleplay.ModElement {
 			super("tavernlow", ElementsConfinalandRoleplay.sounds.get(new ResourceLocation("confinalandroleplay:musictavernlow")));
 			setUnlocalizedName("tavernlow");
 			setRegistryName("tavernlow");
-			setCreativeTab(CreativeTabs.MISC);
+			setCreativeTab(TabConfinalandPolice.tab);
 		}
 	}
 }

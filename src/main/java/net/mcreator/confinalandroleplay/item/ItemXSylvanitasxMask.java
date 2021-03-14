@@ -12,9 +12,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -28,16 +28,17 @@ public class ItemXSylvanitasxMask extends ElementsConfinalandRoleplay.ModElement
 	@GameRegistry.ObjectHolder("confinalandroleplay:xsylvanitasxmaskboots")
 	public static final Item boots = null;
 	public ItemXSylvanitasxMask(ElementsConfinalandRoleplay instance) {
-		super(instance, 78);
+		super(instance, 87);
 	}
 
 	@Override
 	public void initElements() {
-		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("XSYLVANITASXMASK", "confinalandroleplay:xylvanitasx_mask_", 25,
-				new int[]{2, 5, 6, 2}, 9, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("")),
+		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("XSYLVANITASXMASK", "confinalandroleplay:xylvanitasx_mask_", 0,
+				new int[]{0, 0, 0, 0}, 0,
+				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("item.armor.equip_leather")),
 				0f);
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.HEAD).setUnlocalizedName("xsylvanitasxmaskhelmet")
-				.setRegistryName("xsylvanitasxmaskhelmet").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("xsylvanitasxmaskhelmet").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

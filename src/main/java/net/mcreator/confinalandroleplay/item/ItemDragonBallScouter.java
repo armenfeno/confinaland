@@ -18,6 +18,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureDBscouterHelmetTickEvent;
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -52,7 +53,7 @@ public class ItemDragonBallScouter extends ElementsConfinalandRoleplay.ModElemen
 					ProcedureDBscouterHelmetTickEvent.executeProcedure($_dependencies);
 				}
 			}
-		}.setUnlocalizedName("dragonballscouterhelmet").setRegistryName("dragonballscouterhelmet").setCreativeTab(null));
+		}.setUnlocalizedName("dragonballscouterhelmet").setRegistryName("dragonballscouterhelmet").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

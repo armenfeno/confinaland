@@ -20,11 +20,11 @@ import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureMyersKnifeslowness;
 import net.mcreator.confinalandroleplay.procedure.ProcedureMyersKnifeRightClickedInAir;
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.Set;
@@ -91,7 +91,7 @@ public class ItemMyersKnife extends ElementsConfinalandRoleplay.ModElement {
 					ProcedureMyersKnifeslowness.executeProcedure($_dependencies);
 				}
 			}
-		}.setUnlocalizedName("myersknife").setRegistryName("myersknife").setCreativeTab(CreativeTabs.COMBAT));
+		}.setUnlocalizedName("myersknife").setRegistryName("myersknife").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

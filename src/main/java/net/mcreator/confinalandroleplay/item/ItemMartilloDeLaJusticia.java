@@ -13,12 +13,12 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureMartilloDeLaJusticiaRightClickedInAir;
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.List;
@@ -47,7 +47,7 @@ public class ItemMartilloDeLaJusticia extends ElementsConfinalandRoleplay.ModEle
 			maxStackSize = 1;
 			setUnlocalizedName("martillodelajusticia");
 			setRegistryName("martillodelajusticia");
-			setCreativeTab(CreativeTabs.TOOLS);
+			setCreativeTab(TabConfinalandPolice.tab);
 		}
 
 		@Override

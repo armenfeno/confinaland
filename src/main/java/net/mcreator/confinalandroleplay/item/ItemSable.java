@@ -23,13 +23,13 @@ import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableToolInHandTicks;
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableRightClickedInAir;
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableMobIsHitWithTool;
 import net.mcreator.confinalandroleplay.procedure.ProcedureApagarSable;
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.Set;
@@ -138,7 +138,7 @@ public class ItemSable extends ElementsConfinalandRoleplay.ModElement {
 					ProcedureSableToolInHandTicks.executeProcedure($_dependencies);
 				}
 			}
-		}.setUnlocalizedName("sable").setRegistryName("sable").setCreativeTab(CreativeTabs.COMBAT));
+		}.setUnlocalizedName("sable").setRegistryName("sable").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

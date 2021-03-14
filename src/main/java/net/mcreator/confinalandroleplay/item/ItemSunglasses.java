@@ -14,6 +14,7 @@ import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -35,7 +36,7 @@ public class ItemSunglasses extends ElementsConfinalandRoleplay.ModElement {
 		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("SUNGLASSES", "confinalandroleplay:lasses", 0, new int[]{0, 0, 0, 0}, 9,
 				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("block.cloth.place")), 0f);
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.HEAD).setUnlocalizedName("sunglasseshelmet")
-				.setRegistryName("sunglasseshelmet").setCreativeTab(null));
+				.setRegistryName("sunglasseshelmet").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

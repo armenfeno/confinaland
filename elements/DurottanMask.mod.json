@@ -3,7 +3,7 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "model_head",
+    "textureHelmet": "durottan_miniature",
     "enableBody": false,
     "textureBody": "",
     "enableLeggings": false,
@@ -11,10 +11,10 @@
     "enableBoots": false,
     "textureBoots": "",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:ConfinalandPolice"
     },
     "armorTextureFile": "durottan_mask_",
-    "helmetName": "Durottan Mask Helmet",
+    "helmetName": "Máscara de Durottan",
     "bodyName": "Durottan Mask Body",
     "leggingsName": "Durottan Mask Leggings",
     "bootsName": "Durottan Mask Boots",
@@ -32,15 +32,15 @@
     "bootsModelPartL": "Boots L",
     "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
-    "maxDamage": 25,
-    "damageValueHelmet": 2,
-    "damageValueBody": 6,
-    "damageValueLeggings": 5,
-    "damageValueBoots": 2,
+    "maxDamage": 0,
+    "damageValueHelmet": 0,
+    "damageValueBody": 0,
+    "damageValueLeggings": 0,
+    "damageValueBoots": 0,
     "enchantability": 9,
     "toughness": 0.0,
     "equipSound": {
-      "value": ""
+      "value": "item.armor.equip_leather"
     },
     "repairItems": []
   }

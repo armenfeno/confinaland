@@ -18,11 +18,11 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureSarumanStaffRightClickedInAir;
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import com.google.common.collect.Multimap;
@@ -57,7 +57,7 @@ public class ItemSarumanStaff extends ElementsConfinalandRoleplay.ModElement {
 				}
 				return retval;
 			}
-		}.setUnlocalizedName("sarumanstaff").setRegistryName("sarumanstaff").setCreativeTab(CreativeTabs.TOOLS));
+		}.setUnlocalizedName("sarumanstaff").setRegistryName("sarumanstaff").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

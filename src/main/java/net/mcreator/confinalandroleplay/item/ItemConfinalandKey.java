@@ -10,11 +10,11 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.List;
@@ -43,7 +43,7 @@ public class ItemConfinalandKey extends ElementsConfinalandRoleplay.ModElement {
 			maxStackSize = 1;
 			setUnlocalizedName("confinalandkey");
 			setRegistryName("confinalandkey");
-			setCreativeTab(CreativeTabs.TOOLS);
+			setCreativeTab(TabConfinalandPolice.tab);
 		}
 
 		@Override

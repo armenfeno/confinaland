@@ -12,13 +12,13 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
-public class ItemEpicniltimeMask extends ElementsConfinalandRoleplay.ModElement {
+public class ItemEpicNilTimeMask extends ElementsConfinalandRoleplay.ModElement {
 	@GameRegistry.ObjectHolder("confinalandroleplay:epicniltimemaskhelmet")
 	public static final Item helmet = null;
 	@GameRegistry.ObjectHolder("confinalandroleplay:epicniltimemaskbody")
@@ -27,17 +27,17 @@ public class ItemEpicniltimeMask extends ElementsConfinalandRoleplay.ModElement 
 	public static final Item legs = null;
 	@GameRegistry.ObjectHolder("confinalandroleplay:epicniltimemaskboots")
 	public static final Item boots = null;
-	public ItemEpicniltimeMask(ElementsConfinalandRoleplay instance) {
-		super(instance, 79);
+	public ItemEpicNilTimeMask(ElementsConfinalandRoleplay instance) {
+		super(instance, 88);
 	}
 
 	@Override
 	public void initElements() {
-		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("EPICNILTIMEMASK", "confinalandroleplay:picilime_mask_", 25,
-				new int[]{2, 5, 6, 2}, 9, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("")),
+		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("EPICNILTIMEMASK", "confinalandroleplay:picilime_mask_", 0, new int[]{0, 0, 0, 0},
+				9, (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("item.armor.equip_leather")),
 				0f);
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.HEAD).setUnlocalizedName("epicniltimemaskhelmet")
-				.setRegistryName("epicniltimemaskhelmet").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("epicniltimemaskhelmet").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

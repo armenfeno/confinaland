@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Myers Knife",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:ConfinalandPolice"
     },
     "toolType": "Sword",
     "harvestLevel": 0,
