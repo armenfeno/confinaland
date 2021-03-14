@@ -62,24 +62,6 @@
       }
     ]
   },
-  "tavernmusic": {
-    "category": "music",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:usicavern",
-        "stream": true
-      }
-    ]
-  },
-  "doorbell": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:doorbell-sound-effect",
-        "stream": false
-      }
-    ]
-  },
   "confinacoin": {
     "category": "master",
     "sounds": [
@@ -311,6 +293,24 @@
       {
         "name": "confinalandroleplay:discoteca_exterior",
         "stream": true
+      }
+    ]
+  },
+  "tavernmusic": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:usicavern",
+        "stream": true
+      }
+    ]
+  },
+  "doorbell": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:doorbell-sound-effect",
+        "stream": false
       }
     ]
   }
