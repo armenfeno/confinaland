@@ -1121,6 +1121,34 @@
         "eb": true,
         "ec": true
       }
+    },
+    {
+      "name": "CreeperCostume",
+      "type": "armor",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "XanatoxMask",
+      "type": "armor",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
     }
   ],
   "variable_elements": [],
@@ -1313,6 +1341,7 @@
       "item.dragonballscouterboots.name": "Dragon Ball Scouter Boots",
       "key.mcreator.apagarsable": "Apagarsable",
       "item.sunglasseshelmet.name": "Sun glasses",
+      "item.creepercostumehelmet.name": "Creeper Costume Helmet",
       "item.sawmaskboots.name": "Saw Mask Boots",
       "item.ironmancostumehelmet.name": "Iron Man Costume Helmet",
       "tile.doorbell.name": "Door Bell",
@@ -1328,7 +1357,10 @@
       "item.sunglasses01legs.name": "Sun Glasses01 Leggings",
       "item.antygravityhelmetboots.name": "Anty Gravity Helmet Boots",
       "item.dni.name": "DNI Confinaliense",
+      "item.xanatoxmaskboots.name": "Xanatox Mask Boots",
       "item.durottanmasklegs.name": "Durottan Mask Leggings",
+      "item.creepercostumeboots.name": "Creeper Costume Boots",
+      "item.xanatoxmaskbody.name": "Xanatox Mask Body",
       "item.myersknife.name": "Myers Knife",
       "item.sawmaskbody.name": "Saw Mask Body",
       "item.sunglassesbody.name": "Sunglasses Body",
@@ -1343,7 +1375,9 @@
       "item.sablemango.name": "Green Sable Laser",
       "item.myerscostumelegs.name": "Myers Costume Leggings",
       "item.bastomagic.name": "Basto Magic",
+      "item.creepercostumebody.name": "Creeper Costume Body",
       "tile.borderblock.name": "Border Block",
+      "item.creepercostumelegs.name": "Creeper Costume Leggings",
       "item.xsylvanitasxmaskhelmet.name": "X Sylvanitasx Mask Helmet",
       "item.record.tavernlow.desc": "Música ambiental para la Taverna de Confinaland",
       "item.confinalandkey.name": "Confinaland Key",
@@ -1360,7 +1394,9 @@
       "item.xsylvanitasxmaskbody.name": "X Sylvanitasx Mask Body",
       "item.confinacoin.name": "Black Confinacoin",
       "item.sunglasses01boots.name": "Sun Glasses01 Boots",
+      "item.xanatoxmasklegs.name": "Xanatox Mask Leggings",
       "item.myerscostumeboots.name": "Myers Costume Boots",
+      "item.xanatoxmaskhelmet.name": "Xanatox Mask Helmet",
       "tile.dragonball4stars.name": "Bola de Drac 4 estrelles",
       "item.durottanmaskhelmet.name": "Durottan Mask Helmet",
       "item.dragonballscouterlegs.name": "Dragon Ball Scouter Leggings",
