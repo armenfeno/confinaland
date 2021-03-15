@@ -62,15 +62,6 @@
       }
     ]
   },
-  "confinacoin": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:efecto-de-sonido-caja-registradora_mp3cut.net",
-        "stream": false
-      }
-    ]
-  },
   "mariobros": {
     "category": "music",
     "sounds": [
@@ -278,15 +269,6 @@
       }
     ]
   },
-  "discoteca_interior": {
-    "category": "music",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:discoteca_interior",
-        "stream": true
-      }
-    ]
-  },
   "discoteca_exterior": {
     "category": "music",
     "sounds": [
@@ -311,6 +293,33 @@
       {
         "name": "confinalandroleplay:doorbell-sound-effect",
         "stream": false
+      }
+    ]
+  },
+  "centro_comercial": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:entro_comercial",
+        "stream": true
+      }
+    ]
+  },
+  "discoteca_interior": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:discoteca",
+        "stream": false
+      }
+    ]
+  },
+  "pokemon": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:pokemon",
+        "stream": true
       }
     ]
   }

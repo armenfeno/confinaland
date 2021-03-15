@@ -12,9 +12,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
+import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 @ElementsConfinalandRoleplay.ModElement.Tag
@@ -28,21 +28,22 @@ public class ItemCreeperCostume extends ElementsConfinalandRoleplay.ModElement {
 	@GameRegistry.ObjectHolder("confinalandroleplay:creepercostumeboots")
 	public static final Item boots = null;
 	public ItemCreeperCostume(ElementsConfinalandRoleplay instance) {
-		super(instance, 82);
+		super(instance, 93);
 	}
 
 	@Override
 	public void initElements() {
-		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("CREEPERCOSTUME", "confinalandroleplay:creeper_", 25, new int[]{2, 5, 6, 2}, 9,
-				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("")), 0f);
+		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("CREEPERCOSTUME", "confinalandroleplay:creeper_", 0, new int[]{0, 0, 0, 0}, 9,
+				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("item.armor.equip_leather")),
+				0f);
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.HEAD).setUnlocalizedName("creepercostumehelmet")
-				.setRegistryName("creepercostumehelmet").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("creepercostumehelmet").setCreativeTab(TabConfinalandPolice.tab));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.CHEST).setUnlocalizedName("creepercostumebody")
-				.setRegistryName("creepercostumebody").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("creepercostumebody").setCreativeTab(TabConfinalandPolice.tab));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.LEGS).setUnlocalizedName("creepercostumelegs")
-				.setRegistryName("creepercostumelegs").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("creepercostumelegs").setCreativeTab(TabConfinalandPolice.tab));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.FEET).setUnlocalizedName("creepercostumeboots")
-				.setRegistryName("creepercostumeboots").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("creepercostumeboots").setCreativeTab(TabConfinalandPolice.tab));
 	}
 
 	@SideOnly(Side.CLIENT)
