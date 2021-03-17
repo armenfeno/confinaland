@@ -3,10 +3,8 @@ package net.mcreator.confinalandroleplay.entity;
 
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
 import net.minecraft.world.biome.Biome;
@@ -20,7 +18,6 @@ import net.minecraft.entity.ai.EntityAIPanic;
 import net.minecraft.entity.ai.EntityAILeapAtTarget;
 import net.minecraft.entity.ai.EntityAIHurtByTarget;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.Entity;
@@ -45,14 +42,7 @@ public class EntityCajeroAutomatico extends ElementsConfinalandRoleplay.ModEleme
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> EntityEntryBuilder.create().entity(EntityCustom.class)
-				.id(new ResourceLocation("confinalandroleplay", "cajeroautomatico"), ENTITYID).name("cajeroautomatico").tracker(64, 3, true)
-				.egg(-3355444, -13312).build());
-	}
-
-	@Override
-	public void init(FMLInitializationEvent event) {
-		Biome[] spawnBiomes = allbiomes(Biome.REGISTRY);
-		EntityRegistry.addSpawn(EntityCustom.class, 20, 3, 30, EnumCreatureType.MONSTER, spawnBiomes);
+				.id(new ResourceLocation("confinalandroleplay", "cajeroautomatico"), ENTITYID).name("cajeroautomatico").tracker(64, 3, true).build());
 	}
 
 	private Biome[] allbiomes(net.minecraft.util.registry.RegistryNamespaced<ResourceLocation, Biome> in) {
@@ -81,6 +71,7 @@ public class EntityCajeroAutomatico extends ElementsConfinalandRoleplay.ModEleme
 			experienceValue = 0;
 			this.isImmuneToFire = false;
 			setNoAI(!true);
+			enablePersistence();
 		}
 
 		@Override
@@ -96,6 +87,11 @@ public class EntityCajeroAutomatico extends ElementsConfinalandRoleplay.ModEleme
 		@Override
 		public EnumCreatureAttribute getCreatureAttribute() {
 			return EnumCreatureAttribute.UNDEFINED;
+		}
+
+		@Override
+		protected boolean canDespawn() {
+			return false;
 		}
 
 		@Override

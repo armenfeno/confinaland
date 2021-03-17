@@ -340,5 +340,41 @@
         "stream": true
       }
     ]
+  },
+  "protesto": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:rotesto_",
+        "stream": false
+      }
+    ]
+  },
+  "unmomento": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:n-omento_",
+        "stream": true
+      }
+    ]
+  },
+  "tomaya": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:oma-a_",
+        "stream": true
+      }
+    ]
+  },
+  "dovahkiin": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:ovahkiin_",
+        "stream": true
+      }
+    ]
   }
 }

@@ -10,7 +10,7 @@
     "modelHeight": 1.0,
     "modelShadowSize": 1.0,
     "armorBaseValue": 0.0,
-    "hasSpawnEgg": true,
+    "hasSpawnEgg": false,
     "spawnEggBaseColor": {
       "value": -3355444,
       "falpha": 0.0
@@ -93,12 +93,12 @@
     "rangedAttackItem": {
       "value": ""
     },
-    "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 1,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 3,
-    "maxNumberOfMobsPerGroup": 30,
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }

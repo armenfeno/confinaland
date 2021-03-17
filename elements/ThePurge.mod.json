@@ -21,6 +21,9 @@
     "specialInfo": [
       "Click derecho para iniciar la purga..."
     ],
-    "hasGlow": true
+    "hasGlow": true,
+    "onRightClickedInAir": {
+      "name": "Thepurgeright"
+    }
   }
 }
