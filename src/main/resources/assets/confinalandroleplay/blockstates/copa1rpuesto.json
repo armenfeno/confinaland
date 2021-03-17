@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "confinalandroleplay:copa1rpuesto"
+    },
+    "facing=north": {
+      "model": "confinalandroleplay:copa1rpuesto"
+    },
+    "facing=east": {
+      "model": "confinalandroleplay:copa1rpuesto",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "confinalandroleplay:copa1rpuesto",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "confinalandroleplay:copa1rpuesto",
+      "y": 270
+    }
+  }
+}

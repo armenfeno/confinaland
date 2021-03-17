@@ -1,5 +1,7 @@
 {
-  "id_map": {},
+  "id_map": {
+    "ENTITY": 12
+  },
   "mod_elements": [
     {
       "name": "PorraRightClickedInAir",
@@ -1177,6 +1179,81 @@
         "eb": true,
         "ec": true
       }
+    },
+    {
+      "name": "CajeroAutomatico",
+      "type": "mob",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 11,
+        "1": 12
+      }
+    },
+    {
+      "name": "Copa1rPuesto",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Copa2oPuesto",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Copa3rPuesto",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ThePurge",
+      "type": "item",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ThePurgeRightClickedInAir",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1352,13 +1429,23 @@
       "category": "music"
     },
     {
-      "name": "discoteca_interior",
-      "file": "discoteca",
-      "category": "master"
-    },
-    {
       "name": "pokemon",
       "file": "pokemon",
+      "category": "music"
+    },
+    {
+      "name": "coliseo",
+      "file": "coliseo",
+      "category": "music"
+    },
+    {
+      "name": "discoteca_interior",
+      "file": "discoteca1",
+      "category": "music"
+    },
+    {
+      "name": "the_purge",
+      "file": "he-urge-mergency-roadcast-ystem--_nuncio-del-inicio-de-la-purga_",
       "category": "music"
     }
   ],
@@ -1380,6 +1467,7 @@
       "item.sawmaskboots.name": "Saw Mask Boots",
       "item.ironmancostumehelmet.name": "Disfraz de Iron Man Helmet",
       "item.armenfenomaskboots.name": "Armenfeno Mask Boots",
+      "entity.cajeroautomatico.name": "Cajero Automatico",
       "tile.doorbell.name": "Door Bell",
       "item.fartmaker.name": "Fart Maker",
       "item.rbncinhomaskhelmet.name": "Máscara de Rbncinho",
@@ -1407,8 +1495,10 @@
       "item.antygravityhelmetbody.name": "Anty Gravity Helmet Body",
       "item.jokercostumelegs.name": "Disfraz de Joker Leggings",
       "key.mcreator.jump": "Jump",
+      "tile.copa3rpuesto.name": "Copa1r Puesto",
       "itemGroup.tabconfinalandpolice": "Confinaland 2.0",
       "item.rbncinhomaskbody.name": "Rbncinho Mask Body",
+      "tile.copa1rpuesto.name": "Copa1r Puesto",
       "item.confinacoinsilver.name": "Silver Confinacoin",
       "item.tavernlow.name": "Tavern Low",
       "item.mendingmaker.name": "Empty Mending Book",
@@ -1421,6 +1511,7 @@
       "item.creepercostumelegs.name": "Disfraz de Creeper Leggings",
       "item.xsylvanitasxmaskhelmet.name": "Máscara de XSylvanitasx",
       "item.record.tavernlow.desc": "Música ambiental para la Taverna de Confinaland",
+      "item.thepurge.name": "The Purge",
       "item.confinalandkey.name": "Confinaland Key",
       "item.xsylvanitasxmaskboots.name": "X Sylvanitasx Mask Boots",
       "item.sunglasses01body.name": "Sun Glasses01 Body",
@@ -1437,6 +1528,7 @@
       "item.xanatoxmaskhelmet.name": "Máscara de Xanatox",
       "tile.dragonball4stars.name": "Bola de Drac 4 estrelles",
       "item.durottanmaskhelmet.name": "Máscara de Durottan",
+      "tile.copa2opuesto.name": "Copa1r Puesto",
       "item.dragonballscouterlegs.name": "Dragon Ball Scouter Leggings",
       "item.antygravityhelmetlegs.name": "Anty Gravity Helmet Leggings",
       "item.sawmasklegs.name": "Saw Mask Leggings",

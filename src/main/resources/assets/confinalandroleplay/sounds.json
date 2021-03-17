@@ -305,20 +305,38 @@
       }
     ]
   },
-  "discoteca_interior": {
-    "category": "master",
-    "sounds": [
-      {
-        "name": "confinalandroleplay:discoteca",
-        "stream": false
-      }
-    ]
-  },
   "pokemon": {
     "category": "music",
     "sounds": [
       {
         "name": "confinalandroleplay:pokemon",
+        "stream": true
+      }
+    ]
+  },
+  "coliseo": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:coliseo",
+        "stream": true
+      }
+    ]
+  },
+  "discoteca_interior": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:discoteca1",
+        "stream": true
+      }
+    ]
+  },
+  "the_purge": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:he-urge-mergency-roadcast-ystem--_nuncio-del-inicio-de-la-purga_",
         "stream": true
       }
     ]

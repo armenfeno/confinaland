@@ -1,0 +1,8 @@
+{
+  "parent": "confinalandroleplay:custom/copa_1r_puesto",
+  "textures": {
+    "all": "confinalandroleplay:blocks/copa_oro",
+    "particle": "confinalandroleplay:blocks/copa_oro",
+    "missing": "confinalandroleplay:blocks/copa_oro"
+  }
+}
