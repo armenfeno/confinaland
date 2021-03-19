@@ -33,7 +33,6 @@ import net.minecraft.block.Block;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureDoorBellOnBlockRightClicked_sound;
 import net.mcreator.confinalandroleplay.procedure.ProcedureDoorBell01UpdateTick;
-import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.Random;
@@ -69,7 +68,7 @@ public class BlockDoorBell01 extends ElementsConfinalandRoleplay.ModElement {
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(0);
-			setCreativeTab(TabConfinalandPolice.tab);
+			setCreativeTab(null);
 			this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 		}
 

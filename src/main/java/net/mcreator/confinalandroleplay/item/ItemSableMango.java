@@ -23,7 +23,6 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.confinalandroleplay.procedure.ProcedureSableMangoRightClickedOnBlock;
-import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
 import java.util.Set;
@@ -79,7 +78,7 @@ public class ItemSableMango extends ElementsConfinalandRoleplay.ModElement {
 				}
 				return retval;
 			}
-		}.setUnlocalizedName("sablemango").setRegistryName("sablemango").setCreativeTab(TabConfinalandPolice.tab));
+		}.setUnlocalizedName("sablemango").setRegistryName("sablemango").setCreativeTab(null));
 	}
 
 	@SideOnly(Side.CLIENT)

@@ -28,7 +28,7 @@
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:ConfinalandPolice"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "affectedBySilkTouch": false,

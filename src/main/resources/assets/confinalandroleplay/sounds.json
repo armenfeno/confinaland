@@ -376,5 +376,14 @@
         "stream": true
       }
     ]
+  },
+  "pokemonheal": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "confinalandroleplay:okemoneal",
+        "stream": true
+      }
+    ]
   }
 }

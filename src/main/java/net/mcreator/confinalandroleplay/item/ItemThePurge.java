@@ -8,7 +8,10 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -17,7 +20,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
-import net.mcreator.confinalandroleplay.procedure.ProcedureThepurgeright;
+import net.mcreator.confinalandroleplay.procedure.ProcedureThePurgeRightClick;
 import net.mcreator.confinalandroleplay.creativetab.TabConfinalandPolice;
 import net.mcreator.confinalandroleplay.ElementsConfinalandRoleplay;
 
@@ -86,13 +89,34 @@ public class ItemThePurge extends ElementsConfinalandRoleplay.ModElement {
 			int z = (int) entity.posZ;
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureThepurgeright.executeProcedure($_dependencies);
+				ProcedureThePurgeRightClick.executeProcedure($_dependencies);
 			}
 			return ar;
+		}
+
+		@Override
+		public EnumActionResult onItemUseFirst(EntityPlayer entity, World world, BlockPos pos, EnumFacing direction, float hitX, float hitY,
+				float hitZ, EnumHand hand) {
+			EnumActionResult retval = super.onItemUseFirst(entity, world, pos, direction, hitX, hitY, hitZ, hand);
+			ItemStack itemstack = entity.getHeldItem(hand);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureThePurgeRightClick.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }

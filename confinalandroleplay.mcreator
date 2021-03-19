@@ -1224,14 +1224,32 @@
       "ids": {}
     },
     {
-      "name": "Thepurgeright",
+      "name": "ChalecoReflectante",
+      "type": "armor",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true
+      }
+    },
+    {
+      "name": "ThePurgeRightClick",
       "type": "procedure",
-      "sortid": 102,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "int"
@@ -1250,9 +1268,38 @@
           }
         ]
       }
+    },
+    {
+      "name": "BienvenidaConfinaland",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "timeSec",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "timeMin",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    }
+  ],
   "sound_elements": [
     {
       "name": "alto_policia",
@@ -1463,6 +1510,11 @@
       "name": "dovahkiin",
       "file": "ovahkiin_",
       "category": "music"
+    },
+    {
+      "name": "pokemonheal",
+      "file": "okemoneal",
+      "category": "music"
     }
   ],
   "language_map": {
@@ -1484,6 +1536,7 @@
       "item.ironmancostumehelmet.name": "Disfraz de Iron Man Helmet",
       "item.armenfenomaskboots.name": "Armenfeno Mask Boots",
       "entity.cajeroautomatico.name": "Cajero Automatico",
+      "item.chalecoreflectanteboots.name": "Chaleco Reflectante Boots",
       "tile.doorbell.name": "Door Bell",
       "item.fartmaker.name": "Fart Maker",
       "item.rbncinhomaskhelmet.name": "Máscara de Rbncinho",
@@ -1503,6 +1556,7 @@
       "item.durottanmasklegs.name": "Durottan Mask Leggings",
       "item.xanatoxmaskbody.name": "Xanatox Mask Body",
       "item.creepercostumeboots.name": "Disfraz de Creeper Boots",
+      "item.chalecoreflectantehelmet.name": "Chaleco Reflectante Helmet",
       "item.myersknife.name": "Myers Knife",
       "item.sawmaskbody.name": "Saw Mask Body",
       "item.sunglassesbody.name": "Sunglasses Body",
@@ -1510,6 +1564,7 @@
       "item.porra.name": "Porra",
       "item.antygravityhelmetbody.name": "Anty Gravity Helmet Body",
       "item.jokercostumelegs.name": "Disfraz de Joker Leggings",
+      "item.chalecoreflectantebody.name": "Chaleco Reflectante",
       "key.mcreator.jump": "Jump",
       "tile.copa3rpuesto.name": "Copa1r Puesto",
       "itemGroup.tabconfinalandpolice": "Confinaland 2.0",
@@ -1530,6 +1585,7 @@
       "item.thepurge.name": "The Purge",
       "item.confinalandkey.name": "Confinaland Key",
       "item.xsylvanitasxmaskboots.name": "X Sylvanitasx Mask Boots",
+      "item.chalecoreflectantelegs.name": "Chaleco Reflectante Leggings",
       "item.sunglasses01body.name": "Sun Glasses01 Body",
       "tile.sarumanpalantir.name": "Saruman Palantir",
       "item.durottanmaskbody.name": "Durottan Mask Body",

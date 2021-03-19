@@ -12,6 +12,8 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.client.Minecraft;
 
 public class ConfinalandRoleplayVariables {
+	public static double timeSec = 0;
+	public static double timeMin = 0;
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "confinalandroleplay_mapvars";
 		public MapVariables() {

@@ -1,0 +1,7 @@
+{
+  "_fv": 6,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"146\" y=\"343\"><field name=\"trigger\">Player joins the world</field><next><block type=\"entity_execute_command\"><value name=\"command\"><block type=\"text\"><field name=\"TEXT\">/tellraw @s [\"\",{\"text\":\". . : : BIENVENIDOS A CONFINALAND 2.0 : : . .\",\"bold\":true,\"color\":\"yellow\"},{\"text\":\"\\n\\nClick \"},{\"text\":\"aquí\",\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.dropbox.com/s/o85gnn2iyzto0xz/Normas%20Confinaland%202.0.pdf?dl=0\"}},{\"text\":\" para ver las \"},{\"text\":\"NORMAS DEL SERVER\",\"color\":\"dark_red\"}]</field></block></value></block></next></block></xml>"
+  }
+}

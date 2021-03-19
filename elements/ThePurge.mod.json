@@ -23,7 +23,10 @@
     ],
     "hasGlow": true,
     "onRightClickedInAir": {
-      "name": "Thepurgeright"
+      "name": "ThePurgeRightClick"
+    },
+    "onRightClickedOnBlock": {
+      "name": "ThePurgeRightClick"
     }
   }
 }

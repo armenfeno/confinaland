@@ -96,7 +96,7 @@
     "spawnThisMob": false,
     "doesDespawnWhenIdle": false,
     "spawningProbability": 1,
-    "mobSpawningType": "monster",
+    "mobSpawningType": "ambient",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [],
